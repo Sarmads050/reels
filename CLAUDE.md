@@ -2,40 +2,46 @@
 
 This repo holds the reels for the Instagram account **@quotations_and_quotes** (owner: Sarmad, Pakistan, timezone **Asia/Karachi**). Talk to the owner in **Roman Urdu**, short and simple.
 
-- `media/` — reels waiting to be posted (MP4, 1080x1350, 15 s). Deleted after they are posted.
-- `schedule.json` — one entry per post: `slot` (Karachi time), `file`, `caption`, `approved`, `posted`, `permalink`.
+- `media/` — reels waiting to be posted (MP4, 1080x1350, 15 s, **no audio**: the owner adds a song from Instagram's music library when he posts). Deleted 3 days after their slot.
+- `schedule.json` — one entry per post: `slot` (Karachi time), `file`, `mood`, `caption`, `approved`, `notified`, `songs`.
 - `weeks/` — the quote lists each week's reels were made from.
-- `tools/` — `make_reels.sh <posts.json> <out_dir> [seed]` renders reels in the house style (`premium.py` designs, `raag.py` music, `fonts/`, `music/raag.wav`).
+- `tools/` — `make_reels.sh <posts.json> <out_dir> [seed]` renders silent reels in the house style (`premium.py` designs, `fonts/`).
 
-Publishing goes through the **vidIQ** connector (`vidiq_instagram_publish_reel`); the account is connected there with publishing access. Media URLs for vidIQ are GitHub raw links: `https://raw.githubusercontent.com/Sarmads050/reels/main/<file>`.
+Video links for the owner are GitHub raw links: `https://raw.githubusercontent.com/Sarmads050/reels/main/<file>`.
+
+## How posting works (owner's choice, 13 Oct 2026)
+
+The owner posts every reel himself so he can pick the song. Two reels a day, 10:00 and 18:00 Karachi. About 10 minutes before each slot a reminder run sends him a notification with the video link, the ready caption and **3 song suggestions** that fit that reel right now; he picks one and posts from the Instagram app. **Never publish to Instagram yourself** (no vidiq_instagram_publish_reel, no Metricool posts) unless the owner asks for that again in chat.
 
 ## Rules that never change
 
-- Only post entries with `"approved": true`. The owner approves the exact video and caption; `approved: true` is that approval. Never set `approved` yourself unless the owner says yes in chat.
-- Never post the same entry twice. If anything fails, do not retry in a loop: record `"error"` on the entry, push, and tell the owner.
-- Quotes are original (no copied poetry or lyrics), Roman Urdu, mood: sad / deep / reality / loneliness / sabr / dua / himmat.
+- Quotes are original (no copied poetry or lyrics), Roman Urdu, mood: sad / deep / reality / loneliness / mohabbat / sabr / dua / himmat / umeed.
+- Song suggestions name the song and artist only; never quote lyrics.
+- If anything fails, do not retry in a loop: note it on the entry (`"error"`), push, and tell the owner.
 - Commits end with:
   `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`
 
-## Posting run (10:00 and 18:00 Karachi)
+## Reminder run (09:50 and 17:50 Karachi)
 
 1. `git pull`. Get the current time with the time tool and convert to Asia/Karachi.
-2. In `schedule.json`, pick the earliest entry with `approved: true`, `posted: false`, whose `slot` is not more than 20 minutes in the future and not more than 6 hours in the past. Post only that one entry per run. Nothing due → stop quietly.
-   - An approved entry more than 6 hours late: mark `"error": "missed"` and tell the owner; do not post it late.
-   - A due entry with `approved: false`: do not post; tell the owner it is waiting for approval.
-3. `vidiq_instagram_connected_accounts` → the account `quotations_and_quotes` with `publishingAvailable: true` (its `platformAccountId`).
-4. `vidiq_video_upload` with `url` = the raw GitHub link of `file` and a short `title`. If it is still processing, call again with `uploadId`.
-5. `vidiq_instagram_publish_reel` with `videoUrl` from step 4, the entry's exact `caption`, and the `platformAccountId`. Then continue with `containerId` (wait ~5 s between calls) until `PUBLISHED`.
-6. Success: set `posted: true` and `permalink`, `git rm` the media file, commit ("Posted <slot>"), push. Send the owner one short line with the permalink.
+2. Pick the entry in `schedule.json` whose `slot` is within the next 40 minutes (or up to 30 minutes past) and that has no `notified: true`. None → also check whether the next week is missing (no entries for tomorrow) and tell the owner if so; otherwise stop quietly.
+3. Find 3 songs for this reel. Use web search for what is trending on Instagram Reels in Pakistan/India right now (search with the month and year, e.g. "trending Instagram reels songs Pakistan <Month YYYY>", plus the reel's mood such as sad, romantic, sufi/spiritual, motivational). Pick 3 real, well-known Pakistani/Indian songs (Urdu/Hindi/Punjabi; sufi or naat-style instrumental for dua/sabr) that are likely in Instagram's music library and match the quote's mood. Prefer songs that are trending now; vary them from the songs suggested in the last 6 entries (`songs` field). For each: "Song – Artist" and a few words on why it fits.
+4. Final message (this is what reaches his phone), in Roman Urdu:
+   - Line 1: "Reel ka waqt: <time> — <mood>" and the quote.
+   - **Video:** the raw GitHub link (tap → three dots → Download).
+   - **Caption:** the exact caption in a code block so he can copy it.
+   - **Gaane (3):** numbered list, best first.
+   - **Steps:** Instagram → + → Reel → video chunein → Audio/Music → gaane ka naam search karein → acha hissa chunein → Next → caption paste → Share.
+5. Save `notified: true` and `songs` on the entry. Also `git rm` media files whose slot is more than 3 days old. Commit and push.
 
 ## Weekly run (Sunday evening Karachi)
 
-1. `git pull`. Clean `schedule.json`: drop entries posted more than 14 days ago.
-2. Results of the last 7 days: `vidiq_instagram_owner_insights` (and `vidiq_ig_profile_reels` for public numbers). Compare moods / quote styles / morning vs evening. Keep vidIQ credit use under 15 per week.
-3. Write 14 new original quotes for the 7 days that start the day after the last slot already in `schedule.json` (7 morning 10:00, 7 evening 18:00), leaning toward what performed best. Never repeat a quote already used (check `weeks/`). Each entry: `id`, `scene` (one of road, rain, moon, mist, sunset, sunrise, city — vary them), `label` (one or two words, CAPS), `line1`, `line2` (short, the punch). Save as `weeks/<first-date>_am.json` and `_pm.json`.
+1. `git pull`. Drop entries from `schedule.json` whose slot is more than 14 days old.
+2. Results of the last 7 days: `vidiq_instagram_owner_insights` (and `vidiq_ig_profile_reels` for public numbers). Compare moods, morning vs evening, and which songs went with the best reels. Keep vidIQ credit use under 15 per week.
+3. Write 14 new original quotes for the 7 days that start the day after the last slot already in `schedule.json` (7 morning 10:00, 7 evening 18:00), leaning toward what performed best. Never repeat a quote already used (check `weeks/`). Each entry: `id`, `scene` (one of road, rain, moon, mist, sunset, sunrise, city — vary them), `label` (one or two words, CAPS), `line1`, `line2` (short, the punch), `mood`. Save as `weeks/<first-date>_am.json` and `_pm.json`.
 4. Render: `tools/make_reels.sh weeks/<first-date>_am.json <tmp> <new seed>` (and `_pm`). Look at every `_preview.png`; text must be easy to read on the background. Fix and re-render any that are not.
-5. Copy MP4s to `media/w<week>_d<n>_am.mp4` / `_pm.mp4`, add 14 entries to `schedule.json` with captions (engaging line + CTA to Save/Share/Comment, then `\n\nFollow @quotations_and_quotes for daily deep lines\n\n` + 5 relevant hashtags), `approved: false`. Commit and push.
-6. Send the owner: a summary of last week's results, a contact sheet of the 14 previews, and a table of quotes + captions. Ask for approval ("Haan" approves all; or name what to change). When they approve, set `approved: true` for those entries and push.
+5. Copy MP4s to `media/w<week>_d<n>_am.mp4` / `_pm.mp4`, add 14 entries to `schedule.json` with `mood` and captions (engaging line + CTA to Save/Share/Comment, then `\n\nFollow @quotations_and_quotes for daily deep lines\n\n` + 5 relevant hashtags), `approved: true` (the owner checks each reel himself when he posts it). Commit and push.
+6. Send the owner: a short summary of last week's results, a contact sheet of the 14 previews, and a table of quotes + captions. If he asks for changes, re-render those, update `schedule.json`, push and show them again.
 
 ## Post checklist (owner's standard)
 
