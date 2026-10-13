@@ -1,0 +1,9 @@
+[
+ {"id":"day1_pm","scene":"rain","label":"DIL KI BAAT","line1":"Kuch baatein dil mein hi reh jaati hain,","line2":"kyunke sunne wala koi apna nahi hota."},
+ {"id":"day2_pm","scene":"moon","label":"TANHAI","line1":"Raat ki khamoshi","line2":"sab se zyada sach bolti hai."},
+ {"id":"day3_pm","scene":"sunset","label":"DUA","line1":"Jab koi saath na de,","line2":"tab Allah sab se qareeb hota hai."},
+ {"id":"day4_pm","scene":"city","label":"REALITY","line1":"Log badalte nahi,","line2":"waqt bas unka asli chehra dikha deta hai."},
+ {"id":"day5_pm","scene":"mist","label":"YAADEIN","line1":"Kuch yaadein mitti nahi,","line2":"bas dard dena chhod deti hain."},
+ {"id":"day6_pm","scene":"road","label":"SAFAR","line1":"Akela chalna seekh lo,","line2":"manzil tak saath koi nahi jaata."},
+ {"id":"day7_pm","scene":"sunrise","label":"UMEED","line1":"Har andheri raat ke baad","line2":"subah zaroor hoti hai."}
+]

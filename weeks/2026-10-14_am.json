@@ -1,0 +1,9 @@
+[
+ {"id":"day1","scene":"road","label":"REALITY","line1":"Har muskurata chehra apna nahi hota,","line2":"waqt aane par yeh sabaq khud mil jata hai."},
+ {"id":"day2","scene":"rain","label":"TANHAI","line1":"Bheed mein bhi tanha rehna","line2":"sab se gehra dard hota hai."},
+ {"id":"day3","scene":"moon","label":"SABR","line1":"Jo cheez der se mil rahi hai,","line2":"shayad Allah use behtar bana kar de raha hai."},
+ {"id":"day4","scene":"mist","label":"DEEP LINES","line1":"Khamosh log kamzor nahi hote,","line2":"woh bas har baat ka jawab dena chhod dete hain."},
+ {"id":"day5","scene":"sunset","label":"MOHABBAT","line1":"Kuch log zindagi mein sabaq ban kar aate hain,","line2":"aur hum unhein qismat samajh baithte hain."},
+ {"id":"day6","scene":"sunrise","label":"HIMMAT","line1":"Toota hua insaan hi","line2":"sab se mazboot dobara khada hota hai."},
+ {"id":"day7","scene":"city","label":"ZINDAGI","line1":"Jo har waqt sab ke liye haazir rahe,","line2":"uski qadar sab se kam hoti hai."}
+]
