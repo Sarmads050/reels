@@ -32,7 +32,7 @@ Video URLs for vidIQ are GitHub raw links: `https://raw.githubusercontent.com/Sa
 3. Music check: run `python3 tools/add_music.py` (it adds a random track to any unposted reel without audio). If it exits with an error, do not post: record `"error": "no audio"`, push, tell the owner. If it changed a file, commit and push before continuing.
 4. `vidiq_instagram_connected_accounts` → the account `quotations_and_quotes` with `publishingAvailable: true` (its `platformAccountId`).
 5. `vidiq_video_upload` with `url` = the raw GitHub link of `file` and a short `title`. If it is still processing, call again with `uploadId`.
-6. `vidiq_instagram_publish_reel` with `videoUrl` from step 4, the entry's exact `caption`, and the `platformAccountId`. Then continue with `containerId` (wait ~5 s between calls) until `PUBLISHED`.
+6. `vidiq_instagram_publish_reel` with `videoUrl` from step 5, the entry's exact `caption`, and the `platformAccountId`. Then continue with `containerId` (wait ~5 s between calls) until `PUBLISHED`.
 7. Success: set `posted: true` and `permalink`, `git rm` the media file, commit ("Posted <slot>"), push. Final message to the owner: one short Roman Urdu line with the permalink.
 
 ## Weekly run (Sunday evening Karachi)
