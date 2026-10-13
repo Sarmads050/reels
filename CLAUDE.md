@@ -32,8 +32,8 @@ Publishing goes through the **vidIQ** connector (`vidiq_instagram_publish_reel`)
 
 1. `git pull`. Clean `schedule.json`: drop entries posted more than 14 days ago.
 2. Results of the last 7 days: `vidiq_instagram_owner_insights` (and `vidiq_ig_profile_reels` for public numbers). Compare moods / quote styles / morning vs evening. Keep vidIQ credit use under 15 per week.
-3. Write 14 new original quotes for next Monday–Sunday (7 morning 10:00, 7 evening 18:00), leaning toward what performed best. Each entry: `id`, `scene` (one of road, rain, moon, mist, sunset, sunrise, city — vary them), `label` (one or two words, CAPS), `line1`, `line2` (short, the punch). Save as `weeks/<monday-date>_am.json` and `_pm.json`.
-4. Render: `tools/make_reels.sh weeks/<date>_am.json <tmp> <new seed>` (and `_pm`). Look at every `_preview.png`; text must be easy to read on the background. Fix and re-render any that are not.
+3. Write 14 new original quotes for the 7 days that start the day after the last slot already in `schedule.json` (7 morning 10:00, 7 evening 18:00), leaning toward what performed best. Never repeat a quote already used (check `weeks/`). Each entry: `id`, `scene` (one of road, rain, moon, mist, sunset, sunrise, city — vary them), `label` (one or two words, CAPS), `line1`, `line2` (short, the punch). Save as `weeks/<first-date>_am.json` and `_pm.json`.
+4. Render: `tools/make_reels.sh weeks/<first-date>_am.json <tmp> <new seed>` (and `_pm`). Look at every `_preview.png`; text must be easy to read on the background. Fix and re-render any that are not.
 5. Copy MP4s to `media/w<week>_d<n>_am.mp4` / `_pm.mp4`, add 14 entries to `schedule.json` with captions (engaging line + CTA to Save/Share/Comment, then `\n\nFollow @quotations_and_quotes for daily deep lines\n\n` + 5 relevant hashtags), `approved: false`. Commit and push.
 6. Send the owner: a summary of last week's results, a contact sheet of the 14 previews, and a table of quotes + captions. Ask for approval ("Haan" approves all; or name what to change). When they approve, set `approved: true` for those entries and push.
 
