@@ -20,6 +20,7 @@ Video URLs for vidIQ are GitHub raw links: `https://raw.githubusercontent.com/Sa
 - Only post entries with `approved: true`. If the owner ever asks to check reels before posting, set new entries to `approved: false` until he says yes.
 - Quotes are original (no copied poetry or lyrics), Roman Urdu, mood: sad / deep / reality / loneliness / mohabbat / sabr / dua / himmat / umeed.
 - Only the tracks in `sounds/` are used as music. Never download or add copyrighted songs.
+- **Never post a reel without music** (owner's rule). Tracks may repeat freely.
 - Commits end with:
   `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`
 
@@ -28,10 +29,11 @@ Video URLs for vidIQ are GitHub raw links: `https://raw.githubusercontent.com/Sa
 1. `git pull`. Get the current time with the time tool and convert to Asia/Karachi.
 2. In `schedule.json`, pick the earliest entry with `approved: true`, `posted: false`, whose `slot` is not more than 15 minutes in the future and not more than 6 hours in the past. Post only that one entry per run. Nothing due → check that tomorrow has entries (tell the owner if not), otherwise stop quietly.
    - An entry more than 6 hours late: mark `"error": "missed"` and tell the owner; do not post it late.
-3. `vidiq_instagram_connected_accounts` → the account `quotations_and_quotes` with `publishingAvailable: true` (its `platformAccountId`).
-4. `vidiq_video_upload` with `url` = the raw GitHub link of `file` and a short `title`. If it is still processing, call again with `uploadId`.
-5. `vidiq_instagram_publish_reel` with `videoUrl` from step 4, the entry's exact `caption`, and the `platformAccountId`. Then continue with `containerId` (wait ~5 s between calls) until `PUBLISHED`.
-6. Success: set `posted: true` and `permalink`, `git rm` the media file, commit ("Posted <slot>"), push. Final message to the owner: one short Roman Urdu line with the permalink.
+3. Music check: run `python3 tools/add_music.py` (it adds a random track to any unposted reel without audio). If it exits with an error, do not post: record `"error": "no audio"`, push, tell the owner. If it changed a file, commit and push before continuing.
+4. `vidiq_instagram_connected_accounts` → the account `quotations_and_quotes` with `publishingAvailable: true` (its `platformAccountId`).
+5. `vidiq_video_upload` with `url` = the raw GitHub link of `file` and a short `title`. If it is still processing, call again with `uploadId`.
+6. `vidiq_instagram_publish_reel` with `videoUrl` from step 4, the entry's exact `caption`, and the `platformAccountId`. Then continue with `containerId` (wait ~5 s between calls) until `PUBLISHED`.
+7. Success: set `posted: true` and `permalink`, `git rm` the media file, commit ("Posted <slot>"), push. Final message to the owner: one short Roman Urdu line with the permalink.
 
 ## Weekly run (Sunday evening Karachi)
 
