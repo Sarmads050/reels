@@ -13,7 +13,7 @@ This repo holds the reels for the Instagram account **@quotations_and_quotes** (
 
 Two reels a day, **10:00 and 18:00 Karachi**, fully automatic, owner's standing approval (`approved: true`).
 
-- **Metricool reels (`channel: metricool`)**: the **Monday–Friday 10:00** reels (5 a week). Posted through Metricool with an **Instagram-library song** chosen from what similar viral reels use, with the reel's own sound muted (`videoVolume: 0`). Metricool's free plan publishes at most **20 posts per calendar month**: count Metricool entries already scheduled or posted in that month; if a new one would be the 21st, make it `vidiq` instead.
+- **Metricool reels (`channel: metricool`)**: the **Monday–Friday 10:00** reels (5 a week). Posted through Metricool with a **slow Instagram-library song** that is trending for that mood, with the reel's own sound muted (`videoVolume: 0`). Metricool's free plan publishes at most **20 posts per calendar month**: count Metricool entries already scheduled or posted in that month; if a new one would be the 21st, make it `vidiq` instead.
 - **vidIQ reels (`channel: vidiq`)**: every other slot. Posted through vidIQ with our own background music.
 - Any Metricool reel that cannot get a song, cannot be scheduled, or did not publish falls back to vidIQ with our own music. **No reel is ever posted without music.**
 
@@ -27,7 +27,8 @@ Metricool brand id `7403821`. vidIQ account `quotations_and_quotes`.
 - Quotes are original (no copied poetry or lyrics), Roman Urdu, mood: sad / deep / reality / loneliness / mohabbat / sabr / dua / himmat / umeed.
 - Our video files only ever contain the tracks in `sounds/`. Instagram songs are attached only through Instagram's own music library (Metricool `audioConfiguration`); never download a song or put it into a file.
 - **Never post a reel without music** (owner's rule). Tracks may repeat freely.
-- vidIQ credits are limited (150 a month, renewing on the 13th). Song research may use at most **35 credits a week**; never let the balance drop below 10.
+- vidIQ credits are limited (150 a month). Song research uses **no** vidIQ credits (owner's rule).
+- Instagram songs must be **slow and relaxing** (owner's rule).
 - Commits end with:
   `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`
 
@@ -38,17 +39,17 @@ Metricool brand id `7403821`. vidIQ account `quotations_and_quotes`.
 - `spiritual`: sabr, dua, Juma, Allah, faith
 - `hope`: himmat, umeed, safar, motivation
 
-## Song research (weekly run, and whenever `songs_pool.json` has no fresh song for a needed group)
+## Song research (no vidIQ credits)
 
-Goal (owner's words): for each of our Metricool reels, look at reels like ours that are doing very well, see which song/music they use, and use the top ones.
+Owner's rules (15 Oct 2026): songs must be **slow and relaxing** (no fast music), and finding them must not use vidIQ credits.
 
-1. For each mood group needed by the coming Metricool reels: `vidiq_instagram_tiktok_outlier_search` (platforms `["instagram"]`, about 8 results, collapseByCreator true), query describing our style (faceless Roman Urdu quote, cinematic background) + the mood; audienceQuery Pakistan/India young adults. Costs 5 credits.
-2. Take the top reels by views whose audio is **music** (skip voiceover-only). For the top ones, call `vidiq_watch_shortform_content` (10 credits each) with a prompt asking only for the song title and artist, or "not identified". Watch at most 2 per week in total across groups; stop early when a group already has 3 fresh songs.
-3. For each identified song, find it in Instagram's library: create or update the test draft in Metricool (see below) with `audioConfiguration.audioId` = "<song title>" (add the artist if needed). If several candidates come back, pick the one whose title clearly is that song (prefer `audioType: music`, otherwise the `original_sound` whose title names the song). No match → skip that song.
-4. Add it to `songs_pool.json` under its group: `{title, artist, audioId, audioType, source_reel, source_views, found}`. Keep at most 6 per group; drop songs older than 30 days. The group's **top 3** = the three with the highest `source_views` found in the last 30 days.
-5. If a needed group still has no song (nothing identified, no credits): use web search for songs trending on Instagram Reels in Pakistan for that mood this month, look each up in the library the same way, and add it with `source_reel: "web trend"`.
+- Sources, all free: (1) web search for songs trending on Instagram Reels in Pakistan/India this month for the mood (e.g. "trending slow sad songs Instagram reels Pakistan <Month YYYY>", "sufi/naat slow reels trending", "slowed reverb Hindi Urdu songs reels"); (2) well-known slow songs that are always used on Urdu quote reels (sad/romantic ballads, sufi, naat, nazm, flute instrumentals).
+- Look each song up in Instagram's library through the Metricool test draft (below) with search terms like "<song> slowed", "<song> acoustic", "<song> unplugged", "<song> flute", or just "<song>". Multiple-match errors list candidates; that is the search.
+- Pick only slow versions: titles with slowed / reverb / acoustic / unplugged / lofi / flute / nazm, or the original song if it is itself a slow ballad. **Never** pick titles with remix, DJ, house, mashup, party, phonk, bass boosted or similar.
+- Save to `songs_pool.json` under its group: `{title, artist, audioId, audioType, library_title, source, found}`. Keep at most 6 per group, drop songs older than 45 days. The group's **top 3** = the newest three (most recently confirmed as trending). Reuse is fine.
+- Do not call `vidiq_instagram_tiktok_outlier_search` or `vidiq_watch_shortform_content` for songs.
 
-Test draft for library lookups: Metricool post uuid `7689021596470561225` (a draft, date 2026-10-30, never published). Get its current id with `getScheduledPosts`; update it with `draft: true`, `autoPublish: false`, keeping it a draft. Multiple-match errors list candidates; that is how to search.
+Test draft for library lookups: Metricool post uuid `7689021596470561225` (a draft, date 2026-10-30, never published). Get its current id with `getScheduledPosts`; update it with `draft: true`, `autoPublish: false`, keeping it a draft. A successful update attaches that audio to the draft (harmless) and changes its id.
 
 ## Posting run (starts ~09:50 and ~17:50 Karachi)
 
@@ -56,7 +57,7 @@ Test draft for library lookups: Metricool post uuid `7689021596470561225` (a dra
 2. **Check earlier Metricool reels.** For each entry with `channel: metricool`, `posted: false`, a `metricool_uuid`, and a slot already more than 10 minutes past: `getScheduledPosts` for that day. If the post is no longer listed as pending (or shows published), set `posted: true` (permalink: find it with `vidiq_ig_profile_reels` if cheap, else leave null) and `git rm` its media file. If it is still pending/failed and the slot is less than 6 hours ago, post it now through vidIQ with our music (steps 6–8) and tell the owner; otherwise mark `"error": "missed"` and tell the owner.
 3. **Prepare Metricool reels for the next 36 hours.** For each entry with `channel: metricool`, `posted: false`, no `metricool_uuid`, slot within the next 36 hours (and at least 20 minutes away):
    - Monthly limit check (see above). Over the limit → set `channel: vidiq`.
-   - Pick its song: from `songs_pool.json`, the top 3 of its mood group; use the one used least recently (rotate, avoid the song of the previous Metricool reel). Pool empty for the group → do "Song research" step 5 for it.
+   - Pick its song: from `songs_pool.json`, the top 3 of its mood group; use the one used least recently (rotate, avoid the song of the previous Metricool reel). Pool empty for the group → do "Song research" for it.
    - `createScheduledPost` (blogId `7403821`, date = slot with +05:00): `autoPublish: true`, `draft: false`, `media` = [raw GitHub link], `text` = the exact caption, `providers` [instagram], `publicationDate` {slot, `Asia/Karachi`}, `instagramData` {`type: REEL`, `showReelOnFeed: true`, `audioConfiguration` {`audioId`: the numeric id, `videoVolume`: 0}}.
    - Success → save `metricool_id`, `metricool_uuid`, `ig_song` {title, artist, audioId}. Failure → set `channel: vidiq`, note the error.
    - Commit and push.
@@ -75,8 +76,8 @@ Test draft for library lookups: Metricool post uuid `7689021596470561225` (a dra
 3. Write 14 new original quotes for the 7 days that start the day after the last slot already in `schedule.json` (7 morning 10:00, 7 evening 18:00), leaning toward what performed best. Never repeat a quote already used (check `weeks/`). Each entry: `id`, `scene` (one of road, rain, moon, mist, sunset, sunrise, city — vary them), `label` (one or two words, CAPS), `line1`, `line2` (short, the punch), `mood`. Save as `weeks/<first-date>_am.json` and `_pm.json`.
 4. Render: `tools/make_reels.sh weeks/<first-date>_am.json <tmp> <new seed>` (and `_pm`). Look at every `_preview.png`; text must be easy to read on the background. Fix and re-render any that are not.
 5. Copy MP4s to `media/w<week>_d<n>_am.mp4` / `_pm.mp4`, add 14 entries to `schedule.json` with `mood`, captions (engaging line + CTA to Save/Share/Comment, then `\n\nFollow @quotations_and_quotes for daily deep lines\n\n` + 5 relevant hashtags), `approved: true`, `posted: false`, `channel` (`metricool` for Monday–Friday 10:00, else `vidiq`, applying the monthly limit). Run `python3 tools/add_music.py`. Commit and push.
-6. Song research for the mood groups of next week's Metricool reels (budget above). Commit and push `songs_pool.json`.
-7. Send the owner: a short summary of last week's results, a contact sheet of the 14 previews, and a table of quotes + captions + music (Instagram song for Metricool reels, our track for the others) + which viral reels the songs came from. If he asks for changes, re-render those, update `schedule.json`, push and show them again.
+6. Song research (free, slow songs only) to refresh the pool for next week's Metricool mood groups. Commit and push `songs_pool.json`.
+7. Send the owner: a short summary of last week's results, a contact sheet of the 14 previews, and a table of quotes + captions + music (Instagram song for Metricool reels, our track for the others) + where the songs came from. If he asks for changes, re-render those, update `schedule.json`, push and show them again.
 
 ## Post checklist (owner's standard)
 

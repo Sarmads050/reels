@@ -1,40 +1,122 @@
 {
  "updated": "2026-10-15",
+ "rule": "Only slow, relaxing versions (slowed / acoustic / unplugged / flute / nazm). No remix, DJ, house, mashup, party or fast songs.",
  "groups": {
   "sad": [
    {
-    "title": "Tanne Meri Yaad Aawegi (acoustic sad version)",
+    "title": "Tanne Meri Yaad Aawegi (acoustic sad)",
     "artist": "Bintu Pabra (cover)",
     "audioId": "27425510767100390",
     "audioType": "original_sound",
     "library_title": "tanne meri yaad jarur aavegii",
-    "source_reel": "https://www.instagram.com/reel/DdksjvdsK6J/",
-    "source_views": 5000000,
+    "source": "viral reel 5M views: instagram.com/reel/DdksjvdsK6J",
+    "found": "2026-10-15"
+   },
+   {
+    "title": "Agar Tum Saath Ho (slowed reverb)",
+    "artist": "Arijit Singh, Alka Yagnik",
+    "audioId": "1050745043819751",
+    "audioType": "original_sound",
+    "library_title": "Agar Tum Saath Ho Slowed Reverb",
+    "source": "library search (slow version)",
+    "found": "2026-10-15"
+   },
+   {
+    "title": "Kahani Suno 2.0 (slowed reverb)",
+    "artist": "Kaifi Khalil",
+    "audioId": "804359587887504",
+    "audioType": "original_sound",
+    "library_title": "Kahani suno 2.0 (Slowed & reverb)",
+    "source": "library search (slow version)",
     "found": "2026-10-15"
    }
   ],
-  "romantic": [],
+  "romantic": [
+   {
+    "title": "Jhol (acoustic + slowed)",
+    "artist": "Maanu, Annural Khalid",
+    "audioId": "1300264697895529",
+    "audioType": "original_sound",
+    "library_title": "JHOL(acoustic + slowed )",
+    "source": "library search (slow version)",
+    "found": "2026-10-15"
+   },
+   {
+    "title": "Kahani Suno 2.0 (slowed reverb)",
+    "artist": "Kaifi Khalil",
+    "audioId": "804359587887504",
+    "audioType": "original_sound",
+    "library_title": "Kahani suno 2.0 (Slowed & reverb)",
+    "source": "library search (slow version)",
+    "found": "2026-10-15"
+   },
+   {
+    "title": "Agar Tum Saath Ho (slowed reverb)",
+    "artist": "Arijit Singh, Alka Yagnik",
+    "audioId": "1050745043819751",
+    "audioType": "original_sound",
+    "library_title": "Agar Tum Saath Ho Slowed Reverb",
+    "source": "library search (slow version)",
+    "found": "2026-10-15"
+   }
+  ],
   "spiritual": [
    {
     "title": "Lab Pe Aati Hai Dua",
-    "artist": "Allama Iqbal (nazm), choir",
+    "artist": "Allama Iqbal (nazm)",
     "audioId": "927304165621597",
     "audioType": "original_sound",
     "library_title": "Lab Pe Aati Hai Dua",
-    "source_reel": "https://www.instagram.com/reel/DeW5ai7Tsxf/",
-    "source_views": 1700000,
+    "source": "viral reel 1.7M views: instagram.com/reel/DeW5ai7Tsxf",
+    "found": "2026-10-15"
+   },
+   {
+    "title": "Tu Kuja Man Kuja",
+    "artist": "Rahat Fateh Ali Khan",
+    "audioId": "850650816016029",
+    "audioType": "original_sound",
+    "library_title": "Tu Kuja Man Kuja by Ustad Rahat Fateh Ali Khan",
+    "source": "library search (slow version)",
+    "found": "2026-10-15"
+   },
+   {
+    "title": "Maula Mere Maula",
+    "artist": "Roop Kumar Rathod",
+    "audioId": "296933893091788",
+    "audioType": "original_sound",
+    "library_title": "Maula Mere Maula - Roop Kumar Rathod",
+    "source": "library search (slow version)",
     "found": "2026-10-15"
    }
   ],
-  "hope": []
- },
- "checked_not_identified": [
-  {
-   "source_reel": "https://www.instagram.com/reel/Dd5ssOeTdfE/",
-   "group": "spiritual",
-   "views": 2300000,
-   "note": "instrumental nasheed BGM, not identified",
-   "checked": "2026-10-15"
-  }
- ]
+  "hope": [
+   {
+    "title": "Hasbi Rabbi (flute)",
+    "artist": "instrumental",
+    "audioId": "306039285206407",
+    "audioType": "original_sound",
+    "library_title": "Hasbi Rabbi - Flute",
+    "source": "library search (slow version)",
+    "found": "2026-10-15"
+   },
+   {
+    "title": "Tu Kuja Man Kuja",
+    "artist": "Rahat Fateh Ali Khan",
+    "audioId": "850650816016029",
+    "audioType": "original_sound",
+    "library_title": "Tu Kuja Man Kuja by Ustad Rahat Fateh Ali Khan",
+    "source": "library search (slow version)",
+    "found": "2026-10-15"
+   },
+   {
+    "title": "Lab Pe Aati Hai Dua",
+    "artist": "Allama Iqbal (nazm)",
+    "audioId": "927304165621597",
+    "audioType": "original_sound",
+    "library_title": "Lab Pe Aati Hai Dua",
+    "source": "library search (slow version)",
+    "found": "2026-10-15"
+   }
+  ]
+ }
 }
