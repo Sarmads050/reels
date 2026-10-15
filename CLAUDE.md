@@ -4,7 +4,7 @@ This repo holds the reels for the Instagram account **@quotations_and_quotes** (
 
 - `media/` — reels waiting to be posted (MP4, 1080x1350, 15 s, with our own background music). Deleted after they are posted.
 - `schedule.json` — one entry per post: `slot` (Karachi time), `file`, `mood`, `sound`, `caption`, `approved`, `channel` (`vidiq` or `metricool`), `ig_song`, `metricool_id`, `metricool_uuid`, `posted`, `permalink`.
-- `songs_pool.json` — Instagram songs found on viral reels similar to ours, per mood group (see "Song research").
+- `songs_pool.json` — slow, relaxing Instagram-library songs per mood group, refreshed weekly (see "Song research").
 - `sounds/` — our own original background tracks; `sounds/playlist.txt` lists the ones in use (1 lofi udaas piano, 3 bansuri cinematic, 4 romantic guitar, 5 slowed reverb sad). Made with `tools/sounds.py`.
 - `weeks/` — the quote lists each week's reels were made from.
 - `tools/` — `make_reels.sh <posts.json> <out_dir> [seed]` renders silent reels in the house style; `add_music.py` gives each unposted reel without audio a random playlist track.
