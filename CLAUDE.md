@@ -60,7 +60,7 @@ Test draft for library lookups: Metricool post uuid `7689021596470561225` (a dra
 3. If tomorrow already has entries in `schedule.json`, skip to step 5. Otherwise write 2 new original quotes for tomorrow (10:00 and 18:00), leaning toward what performed best. Never repeat a quote already used (check `weeks/`). Each: `id`, `scene` (road, rain, moon, mist, sunset, sunrise, city; vary), `label` (one or two words, CAPS), `line1`, `line2`, `mood`. Save as `weeks/<date>.json`.
 4. Render with `tools/make_reels.sh weeks/<date>.json <tmp> <new seed>` (pip install numpy/pillow/fonttools/scipy with `--break-system-packages` if missing; ffmpeg needed). Look at each `_preview.png`; fix and re-render anything hard to read. Copy MP4s to `media/<date>_am.mp4` / `_pm.mp4`; add entries (`mood`; caption = engaging line + CTA, then `\n\nFollow @quotations_and_quotes for daily deep lines\n\n` + 5 hashtags; `approved: true`, `posted: false`, `channel: metricool`, or `manual` over the limit). Run `python3 tools/add_music.py`. Commit and push (the raw link must exist before Metricool fetches it).
 5. Song research when the pool needs it (see "Song research").
-6. Schedule each new `metricool` entry (see "Scheduling in Metricool"). Failure → `channel: manual`, note the error.
+6. Schedule every `metricool` entry that has no `metricool_uuid` yet (see "Scheduling in Metricool"). Failure → `channel: manual`, note the error.
 7. Deliver every `manual` entry not yet sent (see "How posting works"). Commit and push.
 8. Message the owner in short Roman Urdu: the 2 quotes, their times, and each song (or that it was sent for manual upload). Sundays: add the weekly summary.
 

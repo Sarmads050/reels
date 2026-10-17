@@ -95,8 +95,9 @@
     "sound": "5_slowed_reverb_sad.mp3",
     "posted": false,
     "permalink": null,
-    "channel": "vidiq",
-    "error": "missed: the 17 Oct 17:50 posting run stopped at start (usage limit reached); more than 6 hours late. Media kept."
+    "channel": "manual",
+    "error": "missed: the 17 Oct 17:50 posting run stopped at start (usage limit reached); more than 6 hours late. Media kept.",
+    "manual_sent": true
   },
   {
     "slot": "2026-10-18T10:00:00+05:00",
