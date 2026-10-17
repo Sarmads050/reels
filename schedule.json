@@ -97,9 +97,9 @@
     "permalink": null,
     "channel": "metricool_notify",
     "error": "missed: the 17 Oct 17:50 posting run stopped at start (usage limit reached); more than 6 hours late. Media kept.",
-    "metricool_id": "398778773",
-    "metricool_uuid": "2742698239991759968",
-    "note": "Re-sent 18 Oct 02:47 PKT as Metricool notification at owner request"
+    "metricool_id": "398784206",
+    "metricool_uuid": "-8056130707012826252",
+    "note": "Notification re-sent 18 Oct 02:56 PKT (first one at 02:47 did not reach the phone; owner then set up Metricool app notifications)"
   },
   {
     "slot": "2026-10-18T10:00:00+05:00",
