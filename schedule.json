@@ -97,9 +97,9 @@
     "permalink": null,
     "channel": "metricool_notify",
     "error": "missed: the 17 Oct 17:50 posting run stopped at start (usage limit reached); more than 6 hours late. Media kept.",
-    "metricool_id": "398791708",
-    "metricool_uuid": "-8502195300033148511",
-    "note": "Notification re-sent 18 Oct 03:13 PKT after owner turned on HONOR MTN-NX1 in Planner notifications"
+    "metricool_id": "398798041",
+    "metricool_uuid": "1478735114059465788",
+    "note": "Notification re-sent 18 Oct 03:25 PKT after owner turned off Gentle notifications"
   },
   {
     "slot": "2026-10-18T10:00:00+05:00",
