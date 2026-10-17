@@ -61,7 +61,8 @@
       "artist": "Allama Iqbal (nazm)",
       "audioId": "927304165621597",
       "source_reel": "https://www.instagram.com/reel/DeW5ai7Tsxf/"
-    }
+    },
+    "error": "Owner report 17 Oct: no song audible. The Instagram song was an 'original_sound' clip (not licensed library music) and our own track was muted (videoVolume 0), so the reel went out without music."
   },
   {
     "slot": "2026-10-16T18:00:00+05:00",
@@ -94,7 +95,8 @@
     "sound": "5_slowed_reverb_sad.mp3",
     "posted": false,
     "permalink": null,
-    "channel": "vidiq"
+    "channel": "vidiq",
+    "error": "missed: the 17 Oct 17:50 posting run stopped at start (usage limit reached); more than 6 hours late. Media kept."
   },
   {
     "slot": "2026-10-18T10:00:00+05:00",
