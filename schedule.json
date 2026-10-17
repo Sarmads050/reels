@@ -107,7 +107,14 @@
     "sound": "4_romantic_guitar.mp3",
     "posted": false,
     "permalink": null,
-    "channel": "vidiq"
+    "channel": "metricool",
+    "metricool_id": "398771027",
+    "metricool_uuid": "1828836510315991030",
+    "ig_song": {
+      "title": "Sukoon (feat. Harshitha Krishnan)",
+      "artist": "Dhruv Goel",
+      "audioId": "2558053764283667"
+    }
   },
   {
     "slot": "2026-10-18T18:00:00+05:00",
@@ -118,7 +125,14 @@
     "sound": "5_slowed_reverb_sad.mp3",
     "posted": false,
     "permalink": null,
-    "channel": "vidiq"
+    "channel": "metricool",
+    "metricool_id": "398771059",
+    "metricool_uuid": "-8509905215426049276",
+    "ig_song": {
+      "title": "The Nature Of Memories",
+      "artist": "Dhruv Goel",
+      "audioId": "296861997666070"
+    }
   },
   {
     "slot": "2026-10-19T10:00:00+05:00",
@@ -140,7 +154,7 @@
     "sound": "5_slowed_reverb_sad.mp3",
     "posted": false,
     "permalink": null,
-    "channel": "vidiq"
+    "channel": "metricool"
   },
   {
     "slot": "2026-10-20T10:00:00+05:00",
@@ -162,6 +176,6 @@
     "sound": "5_slowed_reverb_sad.mp3",
     "posted": false,
     "permalink": null,
-    "channel": "vidiq"
+    "channel": "metricool"
   }
 ]
