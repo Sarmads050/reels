@@ -1,122 +1,136 @@
 {
- "updated": "2026-10-15",
+ "updated": "2026-10-18",
  "rule": "Only slow, relaxing versions (slowed / acoustic / unplugged / flute / nazm). No remix, DJ, house, mashup, party or fast songs.",
  "groups": {
   "sad": [
    {
-    "title": "Tanne Meri Yaad Aawegi (acoustic sad)",
-    "artist": "Bintu Pabra (cover)",
-    "audioId": "27425510767100390",
-    "audioType": "original_sound",
-    "library_title": "tanne meri yaad jarur aavegii",
-    "source": "viral reel 5M views: instagram.com/reel/DdksjvdsK6J",
-    "found": "2026-10-15"
+    "title": "Piano For A Fallen World",
+    "artist": "Brent Bourgeois",
+    "audioId": "750168916679326",
+    "audioType": "music",
+    "library_title": "Piano For A Fallen World",
+    "source": "Instagram licensed music library (audioType music), found via Metricool test draft lookup",
+    "found": "2026-10-18"
    },
    {
-    "title": "Agar Tum Saath Ho (slowed reverb)",
-    "artist": "Arijit Singh, Alka Yagnik",
-    "audioId": "1050745043819751",
-    "audioType": "original_sound",
-    "library_title": "Agar Tum Saath Ho Slowed Reverb",
-    "source": "library search (slow version)",
-    "found": "2026-10-15"
+    "title": "The Nature Of Memories",
+    "artist": "Dhruv Goel",
+    "audioId": "296861997666070",
+    "audioType": "music",
+    "library_title": "The Nature Of Memories",
+    "source": "Instagram licensed music library (audioType music), found via Metricool test draft lookup",
+    "found": "2026-10-18"
    },
    {
-    "title": "Kahani Suno 2.0 (slowed reverb)",
-    "artist": "Kaifi Khalil",
-    "audioId": "804359587887504",
-    "audioType": "original_sound",
-    "library_title": "Kahani suno 2.0 (Slowed & reverb)",
-    "source": "library search (slow version)",
-    "found": "2026-10-15"
+    "title": "Rainy Sunday",
+    "artist": "Nick Gallant",
+    "audioId": "337827414441066",
+    "audioType": "music",
+    "library_title": "Rainy Sunday",
+    "source": "Instagram licensed music library (audioType music), found via Metricool test draft lookup",
+    "found": "2026-10-18"
    }
   ],
   "romantic": [
    {
-    "title": "Jhol (acoustic + slowed)",
-    "artist": "Maanu, Annural Khalid",
-    "audioId": "1300264697895529",
-    "audioType": "original_sound",
-    "library_title": "JHOL(acoustic + slowed )",
-    "source": "library search (slow version)",
-    "found": "2026-10-15"
+    "title": "Sukoon (feat. Harshitha Krishnan)",
+    "artist": "Dhruv Goel",
+    "audioId": "2558053764283667",
+    "audioType": "music",
+    "library_title": "Sukoon (feat. Harshitha Krishnan)",
+    "source": "Instagram licensed music library (audioType music), found via Metricool test draft lookup",
+    "found": "2026-10-18"
    },
    {
-    "title": "Kahani Suno 2.0 (slowed reverb)",
-    "artist": "Kaifi Khalil",
-    "audioId": "804359587887504",
-    "audioType": "original_sound",
-    "library_title": "Kahani suno 2.0 (Slowed & reverb)",
-    "source": "library search (slow version)",
-    "found": "2026-10-15"
+    "title": "Door Na Jana",
+    "artist": "Faisal Siddique",
+    "audioId": "467050304396237",
+    "audioType": "music",
+    "library_title": "Door Na Jana",
+    "source": "Instagram licensed music library (audioType music), found via Metricool test draft lookup",
+    "found": "2026-10-18"
    },
    {
-    "title": "Agar Tum Saath Ho (slowed reverb)",
-    "artist": "Arijit Singh, Alka Yagnik",
-    "audioId": "1050745043819751",
-    "audioType": "original_sound",
-    "library_title": "Agar Tum Saath Ho Slowed Reverb",
-    "source": "library search (slow version)",
-    "found": "2026-10-15"
+    "title": "Fall In Love",
+    "artist": "Dawn Beyer",
+    "audioId": "3466267956758527",
+    "audioType": "music",
+    "library_title": "Fall In Love",
+    "source": "Instagram licensed music library (audioType music), found via Metricool test draft lookup",
+    "found": "2026-10-18"
    }
   ],
   "spiritual": [
    {
-    "title": "Lab Pe Aati Hai Dua",
-    "artist": "Allama Iqbal (nazm)",
-    "audioId": "927304165621597",
-    "audioType": "original_sound",
-    "library_title": "Lab Pe Aati Hai Dua",
-    "source": "viral reel 1.7M views: instagram.com/reel/DeW5ai7Tsxf",
-    "found": "2026-10-15"
+    "title": "Prayers",
+    "artist": "Dhruv Goel",
+    "audioId": "682087063881321",
+    "audioType": "music",
+    "library_title": "Prayers",
+    "source": "Instagram licensed music library (audioType music), found via Metricool test draft lookup",
+    "found": "2026-10-18"
    },
    {
-    "title": "Tu Kuja Man Kuja",
-    "artist": "Rahat Fateh Ali Khan",
-    "audioId": "850650816016029",
-    "audioType": "original_sound",
-    "library_title": "Tu Kuja Man Kuja by Ustad Rahat Fateh Ali Khan",
-    "source": "library search (slow version)",
-    "found": "2026-10-15"
+    "title": "Hijaz",
+    "artist": "Mike Block (Producer)",
+    "audioId": "1887807918199300",
+    "audioType": "music",
+    "library_title": "Hijaz",
+    "source": "Instagram licensed music library (audioType music), found via Metricool test draft lookup",
+    "found": "2026-10-18"
    },
    {
-    "title": "Maula Mere Maula",
-    "artist": "Roop Kumar Rathod",
-    "audioId": "296933893091788",
-    "audioType": "original_sound",
-    "library_title": "Maula Mere Maula - Roop Kumar Rathod",
-    "source": "library search (slow version)",
-    "found": "2026-10-15"
+    "title": "Lost Tribes (Instrumental)",
+    "artist": "Azam Ali",
+    "audioId": "1051022286028771",
+    "audioType": "music",
+    "library_title": "Lost Tribes (Instrumental)",
+    "source": "Instagram licensed music library (audioType music), found via Metricool test draft lookup",
+    "found": "2026-10-18"
    }
   ],
   "hope": [
    {
-    "title": "Hasbi Rabbi (flute)",
-    "artist": "instrumental",
-    "audioId": "306039285206407",
-    "audioType": "original_sound",
-    "library_title": "Hasbi Rabbi - Flute",
-    "source": "library search (slow version)",
-    "found": "2026-10-15"
+    "title": "Guitar Peace",
+    "artist": "Lance Taber",
+    "audioId": "587460186676938",
+    "audioType": "music",
+    "library_title": "Guitar Peace",
+    "source": "Instagram licensed music library (audioType music), found via Metricool test draft lookup",
+    "found": "2026-10-18"
    },
    {
-    "title": "Tu Kuja Man Kuja",
-    "artist": "Rahat Fateh Ali Khan",
-    "audioId": "850650816016029",
-    "audioType": "original_sound",
-    "library_title": "Tu Kuja Man Kuja by Ustad Rahat Fateh Ali Khan",
-    "source": "library search (slow version)",
-    "found": "2026-10-15"
+    "title": "The Simple Life",
+    "artist": "Dhruv Goel",
+    "audioId": "607917953812167",
+    "audioType": "music",
+    "library_title": "The Simple Life",
+    "source": "Instagram licensed music library (audioType music), found via Metricool test draft lookup",
+    "found": "2026-10-18"
    },
    {
-    "title": "Lab Pe Aati Hai Dua",
-    "artist": "Allama Iqbal (nazm)",
-    "audioId": "927304165621597",
-    "audioType": "original_sound",
-    "library_title": "Lab Pe Aati Hai Dua",
-    "source": "library search (slow version)",
-    "found": "2026-10-15"
+    "title": "Sukoon (feat. Harshitha Krishnan)",
+    "artist": "Dhruv Goel",
+    "audioId": "2558053764283667",
+    "audioType": "music",
+    "library_title": "Sukoon (feat. Harshitha Krishnan)",
+    "source": "Instagram licensed music library (audioType music), found via Metricool test draft lookup",
+    "found": "2026-10-18"
    }
+  ]
+ },
+ "removed_original_sound": {
+  "date": "2026-10-18",
+  "why": "original_sound clips (other users' audio) did not play on the 16 Oct Metricool reel; only audioType music works via the API",
+  "titles": [
+   "Agar Tum Saath Ho (slowed reverb)",
+   "Hasbi Rabbi (flute)",
+   "Jhol (acoustic + slowed)",
+   "Kahani Suno 2.0 (slowed reverb)",
+   "Lab Pe Aati Hai Dua",
+   "Maula Mere Maula",
+   "Tanne Meri Yaad Aawegi (acoustic sad)",
+   "Tu Kuja Man Kuja"
   ]
  }
 }
