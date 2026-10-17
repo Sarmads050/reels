@@ -14,7 +14,7 @@ This repo holds the reels for the Instagram account **@quotations_and_quotes** (
 Two reels a day, **10:00 and 18:00 Karachi**, made **daily** (the evening before). **We never publish to Instagram ourselves.** The owner adds a trending song in the Instagram app and posts each reel himself.
 
 - Each reel is scheduled in Metricool with **`autoPublish: false`** (manual publishing via notification) and **no `audioConfiguration`**, `channel: metricool_notify`. At the slot time the Metricool phone app notifies him; tapping it saves the video to his gallery and copies the caption; he opens Instagram, picks the video, adds a song, pastes the caption and posts. (The Instagram API cannot create Instagram drafts, so this is the closest to "draft".)
-- Also send both reels to the owner in Claude (`SendUserFile`, original MP4) with time, exact caption and a suggested trending slow song for the mood, as a backup. Set `sent_to_owner: true`.
+- Do **not** send the reels to the owner in advance (owner, 18 Oct: "kal ki video kal bhejna"); the Metricool notification at the slot time is the delivery.
 - If Metricool refuses a post (e.g. the free plan's 20-a-month limit or an error), the Claude copy is the only delivery: `channel: manual`, note the error, and send a `PushNotification` "yeh reel manually Instagram par upload kar dein".
 - Never publish through vidIQ or with `autoPublish: true`. Our own music stays inside every MP4 so the video has sound until he picks a song.
 
@@ -60,8 +60,8 @@ Test draft for library lookups: Metricool post uuid `7689021596470561225` (a dra
 3. If tomorrow already has entries in `schedule.json`, skip to step 5. Otherwise write 2 new original quotes for tomorrow (10:00 and 18:00), leaning toward what performed best. Never repeat a quote already used (check `weeks/`). Each: `id`, `scene` (road, rain, moon, mist, sunset, sunrise, city; vary), `label` (one or two words, CAPS), `line1`, `line2`, `mood`. Save as `weeks/<date>.json`.
 4. Render with `tools/make_reels.sh weeks/<date>.json <tmp> <new seed>` (pip install numpy/pillow/fonttools/scipy with `--break-system-packages` if missing; ffmpeg needed). Look at each `_preview.png`; fix and re-render anything hard to read. Copy MP4s to `media/<date>_am.mp4` / `_pm.mp4`; add entries (`mood`; caption = engaging line + CTA, then `\n\nFollow @quotations_and_quotes for daily deep lines\n\n` + 5 hashtags; `approved: true`, `posted: false`, `channel: metricool_notify`). Run `python3 tools/add_music.py`. Commit and push (the raw link must exist before Metricool fetches it).
 5. Schedule every `metricool_notify` entry without a `metricool_uuid` (see "Scheduling in Metricool"). Failure → `channel: manual`, note the error.
-6. Send every entry of tomorrow not yet `sent_to_owner` to the owner (see "How posting works"), with a suggested trending slow song for its mood (free web search; no vidIQ credits). Commit and push.
-7. Message the owner in short Roman Urdu: tomorrow's 2 quotes, times, suggested songs, and that Metricool will notify him at posting time (or which reel must be uploaded from the Claude copy). Sundays: add the weekly summary.
+6. Only for `manual` entries (Metricool refused them): send the MP4 to the owner with `SendUserFile` plus time, exact caption and a suggested trending slow song, and a `PushNotification`; set `sent_to_owner: true`. Commit and push.
+7. Message the owner in one or two short Roman Urdu lines: tomorrow's 2 reels are set in Metricool (times, mood, a suggested trending slow song each), or which reel must be uploaded from the Claude copy. Sundays: add the weekly summary.
 
 ## Scheduling in Metricool
 
