@@ -144,7 +144,9 @@
     "permalink": null,
     "channel": "metricool_notify",
     "style": "916_light_lora",
-    "scene": "sunrise"
+    "scene": "sunrise",
+    "metricool_id": 399229158,
+    "metricool_uuid": "-4174947304049324953"
   },
   {
     "slot": "2026-10-19T18:00:00+05:00",
@@ -157,7 +159,9 @@
     "permalink": null,
     "channel": "metricool_notify",
     "style": "916_light_lora",
-    "scene": "road"
+    "scene": "road",
+    "metricool_id": 399229244,
+    "metricool_uuid": "3050024900072917849"
   },
   {
     "slot": "2026-10-20T10:00:00+05:00",
@@ -170,7 +174,9 @@
     "permalink": null,
     "channel": "metricool_notify",
     "style": "916_light_lora",
-    "scene": "city"
+    "scene": "city",
+    "metricool_id": 399229263,
+    "metricool_uuid": "4161693720016798886"
   },
   {
     "slot": "2026-10-20T18:00:00+05:00",
@@ -183,6 +189,8 @@
     "permalink": null,
     "channel": "metricool_notify",
     "style": "916_light_lora",
-    "scene": "rain"
+    "scene": "rain",
+    "metricool_id": 399229314,
+    "metricool_uuid": "6552362195376556825"
   }
 ]
