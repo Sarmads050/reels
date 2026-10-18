@@ -5,8 +5,7 @@ import sys, os, json, math
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
-FD, OUT, POSTS = sys.argv[1], sys.argv[2], sys.argv[3]
-os.makedirs(OUT, exist_ok=True)
+FD = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 W, H = 1080, 1350
 GOLD = (230, 178, 92); CREAM = (246, 240, 228); GREY = (200, 196, 188)
 
@@ -211,11 +210,14 @@ def text_layer(p):
     sh = Image.new("RGBA", (W, H), (0, 0, 0, 0)); sh.putalpha(a.point(lambda v: int(v * 0.8)))
     return Image.alpha_composite(sh, lay)
 
-posts = json.load(open(POSTS))
-for i, p in enumerate(posts):
-    rng = np.random.default_rng(int(os.environ.get("SEED", "100")) + i)
-    bg = Image.fromarray(cinematic(SCENES[p["scene"]](rng), rng))
-    bg.save(os.path.join(OUT, p["id"] + "_bg.png"))
-    tl = text_layer(p); tl.save(os.path.join(OUT, p["id"] + "_text.png"))
-    Image.alpha_composite(bg.convert("RGBA"), tl).convert("RGB").save(os.path.join(OUT, p["id"] + ".png"))
-    print(p["id"])
+if __name__ == "__main__":  # old 4:5 renderer; scenes are reused by reel916.py
+    FD, OUT, POSTS = sys.argv[1], sys.argv[2], sys.argv[3]
+    os.makedirs(OUT, exist_ok=True)
+    posts = json.load(open(POSTS))
+    for i, p in enumerate(posts):
+        rng = np.random.default_rng(int(os.environ.get("SEED", "100")) + i)
+        bg = Image.fromarray(cinematic(SCENES[p["scene"]](rng), rng))
+        bg.save(os.path.join(OUT, p["id"] + "_bg.png"))
+        tl = text_layer(p); tl.save(os.path.join(OUT, p["id"] + "_text.png"))
+        Image.alpha_composite(bg.convert("RGBA"), tl).convert("RGB").save(os.path.join(OUT, p["id"] + ".png"))
+        print(p["id"])

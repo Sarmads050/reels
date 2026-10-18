@@ -107,13 +107,15 @@
     "caption": "Har shakhs qismat nahi hota, kuch sirf sabaq hote hain. Us ko tag karo jise yeh parhna chahiye.\n\nFollow @quotations_and_quotes for daily deep lines\n\n#mohabbat #sadlines #urdupoetry #lovequotes #deepquotes",
     "approved": true,
     "mood": "mohabbat",
-    "sound": "4_romantic_guitar.mp3",
+    "sound": null,
     "posted": false,
     "permalink": null,
     "channel": "metricool_notify",
     "metricool_id": "398776426",
     "metricool_uuid": "1828836510315991030",
-    "sent_to_owner": true
+    "sent_to_owner": true,
+    "style": "916_light_lora",
+    "scene": "sunset"
   },
   {
     "slot": "2026-10-18T18:00:00+05:00",
@@ -121,13 +123,15 @@
     "caption": "Kuch yaadein hamesha saath rehti hain. Us shakhs ko tag karo jo yaad aata hai.\n\nFollow @quotations_and_quotes for daily deep lines\n\n#yaadein #sadquotes #urdupoetry #mohabbat #deeplines",
     "approved": true,
     "mood": "yaadein (sad/romantic)",
-    "sound": "5_slowed_reverb_sad.mp3",
+    "sound": null,
     "posted": false,
     "permalink": null,
     "channel": "metricool_notify",
     "metricool_id": "398776444",
     "metricool_uuid": "-8509905215426049276",
-    "sent_to_owner": true
+    "sent_to_owner": true,
+    "style": "916_light_lora",
+    "scene": "mist"
   },
   {
     "slot": "2026-10-19T10:00:00+05:00",
@@ -135,10 +139,12 @@
     "caption": "Naya hafta, nayi himmat. Kisi ko share karo jise aaj himmat chahiye.\n\nFollow @quotations_and_quotes for daily deep lines\n\n#motivation #himmat #urduquotes #mondaymotivation #strength",
     "approved": true,
     "mood": "himmat",
-    "sound": "3_bansuri_cinematic.mp3",
+    "sound": null,
     "posted": false,
     "permalink": null,
-    "channel": "metricool_notify"
+    "channel": "metricool_notify",
+    "style": "916_light_lora",
+    "scene": "sunrise"
   },
   {
     "slot": "2026-10-19T18:00:00+05:00",
@@ -146,10 +152,12 @@
     "caption": "Akele chalne wale hi door tak jaate hain. Share karo us dost ke saath jo aaj akela hai.\n\nFollow @quotations_and_quotes for daily deep lines\n\n#motivation #safar #urduquotes #selflove #strength",
     "approved": true,
     "mood": "safar (motivation)",
-    "sound": "5_slowed_reverb_sad.mp3",
+    "sound": null,
     "posted": false,
     "permalink": null,
-    "channel": "metricool_notify"
+    "channel": "metricool_notify",
+    "style": "916_light_lora",
+    "scene": "road"
   },
   {
     "slot": "2026-10-20T10:00:00+05:00",
@@ -157,10 +165,12 @@
     "caption": "Sab ke liye haazir rehna acha hai, lekin apni qadar karna bhi seekho. Aap ne yeh kab mehsoos kiya?\n\nFollow @quotations_and_quotes for daily deep lines\n\n#zindagi #realitylines #urduquotes #selfrespect #deeplines",
     "approved": true,
     "mood": "zindagi",
-    "sound": "4_romantic_guitar.mp3",
+    "sound": null,
     "posted": false,
     "permalink": null,
-    "channel": "metricool_notify"
+    "channel": "metricool_notify",
+    "style": "916_light_lora",
+    "scene": "city"
   },
   {
     "slot": "2026-10-20T18:00:00+05:00",
@@ -168,9 +178,11 @@
     "caption": "Umeed mat chhodo, subah qareeb hai. Save karo jab dil udaas ho.\n\nFollow @quotations_and_quotes for daily deep lines\n\n#umeed #hope #urduquotes #motivationalquotes #deeplines",
     "approved": true,
     "mood": "umeed (hope)",
-    "sound": "5_slowed_reverb_sad.mp3",
+    "sound": null,
     "posted": false,
     "permalink": null,
-    "channel": "metricool_notify"
+    "channel": "metricool_notify",
+    "style": "916_light_lora",
+    "scene": "rain"
   }
 ]

@@ -1,0 +1,44 @@
+[
+ {
+  "id": "w1_d5_am",
+  "scene": "sunset",
+  "label": "MOHABBAT",
+  "line1": "Kuch log zindagi mein sabaq ban kar aate hain,",
+  "line2": "aur hum unhein qismat samajh baithte hain."
+ },
+ {
+  "id": "w1_d5_pm",
+  "scene": "mist",
+  "label": "YAADEIN",
+  "line1": "Kuch yaadein mitti nahi,",
+  "line2": "bas dard dena chhod deti hain."
+ },
+ {
+  "id": "w1_d6_am",
+  "scene": "sunrise",
+  "label": "HIMMAT",
+  "line1": "Toota hua insaan hi",
+  "line2": "sab se mazboot dobara khada hota hai."
+ },
+ {
+  "id": "w1_d6_pm",
+  "scene": "road",
+  "label": "SAFAR",
+  "line1": "Akela chalna seekh lo,",
+  "line2": "manzil tak saath koi nahi jaata."
+ },
+ {
+  "id": "w1_d7_am",
+  "scene": "city",
+  "label": "ZINDAGI",
+  "line1": "Jo har waqt sab ke liye haazir rahe,",
+  "line2": "uski qadar sab se kam hoti hai."
+ },
+ {
+  "id": "w1_d7_pm",
+  "scene": "rain",
+  "label": "UMEED",
+  "line1": "Har andheri raat ke baad",
+  "line2": "subah zaroor hoti hai."
+ }
+]
