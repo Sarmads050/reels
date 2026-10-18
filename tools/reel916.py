@@ -49,12 +49,17 @@ def spaced(d, cx, y, text, f, sp, fill):
     for c in text: d.text((x, y), c, font=f, fill=fill); x += d.textlength(c, font=f) + sp
 
 def text_layers(p):
-    f1, f2 = font("lora700.woff", 80), font("lora600i.woff", 76)
-    s1, s2, gap = 80 * 1.28, 76 * 1.28, 34
+    # shrink the text until everything (label .. @handle) fits inside the safe zone y 300..1260
     d0 = ImageDraw.Draw(Image.new("RGBA", (W, H)))
-    l1 = premium.wrap(d0, p["line1"], f1, MAXW); l2 = premium.wrap(d0, p["line2"], f2, MAXW)
-    block = 120 + len(l1) * s1 + gap + len(l2) * s2
-    y0 = TEXT_Y - block / 2
+    for sz in range(80, 50, -4):
+        f1, f2 = font("lora700.woff", sz), font("lora600i.woff", sz - 4)
+        s1, s2, gap = sz * 1.28, (sz - 4) * 1.28, 34
+        l1 = premium.wrap(d0, p["line1"], f1, MAXW); l2 = premium.wrap(d0, p["line2"], f2, MAXW)
+        block = 120 + len(l1) * s1 + gap + len(l2) * s2
+        total = 70 + block + 29 + (66 if p.get("author") else 0) + 110
+        if total <= 960: break
+    y0 = max(370, TEXT_Y - block / 2 - (33 if p.get("author") else 0))
+    if y0 - 70 + total > 1260: y0 = 1260 - total + 70
     a = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(a)
     spaced(d, CX, y0 - 70, p["label"], font("dm700.ttf", 30), 8, MAROON + (255,))
     d.text((CX, y0 + 95), "“", font=font("lora700.woff", 150), fill=MAROON + (255,), anchor="ms")
@@ -64,6 +69,8 @@ def text_layers(p):
     y += gap
     for ln in l2: d.text((CX, y + s2 / 2), ln, font=f2, fill=MAROON + (255,), anchor="mm"); y += s2
     y += 26; d.rectangle([CX - 50, y, CX + 50, y + 3], fill=MAROON + (235,))
+    if p.get("author"):  # famous line: credit the poet / source under the divider
+        y += 22; d.text((CX, y + 22), "— " + p["author"], font=font("dm700.ttf", 36), fill=MAROON + (255,), anchor="mm"); y += 44
     c = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(c)
     d.text((CX, y + 110), "@quotations_and_quotes", font=font("dm500.ttf", 34), fill=GREY + (240,), anchor="ms")
     return glow(a), glow(b), glow(c)
