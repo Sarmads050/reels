@@ -11,7 +11,7 @@ import premium  # scenes only
 
 FD = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 W, H = 1080, 1920
-CX, MAXW, TEXT_Y = 480, 760, 820          # text centre left of the right-side buttons; above the caption area
+CX, MAXW, TEXT_Y = 540, 780, 820          # text exactly centred (owner, 19 Oct 2026); above the caption area
 INK = (33, 26, 22); MAROON = (122, 34, 40); GREY = (80, 70, 62)
 CREAMBG = np.array([247, 240, 228]) / 255
 def font(n, s): return ImageFont.truetype(os.path.join(FD, n), s)
