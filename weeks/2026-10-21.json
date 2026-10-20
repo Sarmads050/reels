@@ -1,0 +1,24 @@
+[
+ {
+  "id": "2026-10-21_am",
+  "scene": "sunrise",
+  "label": "TAWAKKUL",
+  "line1": "Aur jo Allah par bharosa kare,",
+  "line2": "to Allah usay kaafi hai.",
+  "mood": "spiritual",
+  "topic": "spiritual (sabr / tawakkul)",
+  "author": "Surah At-Talaq 65:3",
+  "source": "https://legacy.quran.com/65/3"
+ },
+ {
+  "id": "2026-10-21_pm",
+  "scene": "mist",
+  "label": "INTEZAAR",
+  "line1": "Ye na thi hamari qismat ki visal-e-yar hota,",
+  "line2": "agar aur jite rahte yahi intizar hota.",
+  "mood": "sad",
+  "topic": "sad love",
+  "author": "Mirza Ghalib",
+  "source": "https://rekhta.org/Top-20-Mirza-Ghalib-Sher"
+ }
+]
