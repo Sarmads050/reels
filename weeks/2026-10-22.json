@@ -1,0 +1,24 @@
+[
+ {
+  "id": "2026-10-22_am",
+  "scene": "road",
+  "label": "KHUDI",
+  "line1": "Khudi ko kar buland itna ki har taqdir se pahle,",
+  "line2": "Khuda bande se khud puchhe bata teri raza kya hai.",
+  "mood": "sad",
+  "topic": "reality / self-respect",
+  "author": "Allama Iqbal",
+  "source": "https://www.rekhta.org/Top-20-Allama-Iqbal-Sher"
+ },
+ {
+  "id": "2026-10-22_pm",
+  "scene": "sunset",
+  "label": "MAA BAAP",
+  "line1": "Ae mere Rab, in dono par reham farma,",
+  "line2": "jaise inhon ne bachpan mein meri parwarish ki.",
+  "mood": "spiritual",
+  "topic": "test: maa / family",
+  "author": "Surah Al-Isra 17:24",
+  "source": "https://legacy.quran.com/17/24"
+ }
+]
