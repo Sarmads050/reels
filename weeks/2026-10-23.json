@@ -1,0 +1,24 @@
+[
+ {
+  "id": "2026-10-23_am",
+  "scene": "sunrise",
+  "label": "JUMA DUA",
+  "line1": "Ae hamare Rab, hamein duniya mein bhi bhalai de,",
+  "line2": "aur aakhirat mein bhi bhalai, aur hamein aag ke azaab se bacha.",
+  "mood": "spiritual",
+  "topic": "Juma dua",
+  "author": "Surah Al-Baqarah 2:201",
+  "source": "https://legacy.quran.com/2/201"
+ },
+ {
+  "id": "2026-10-23_pm",
+  "scene": "mist",
+  "label": "SABR",
+  "line1": "Ae imaan walo, sabr aur namaz se madad lo,",
+  "line2": "beshak Allah sabr karne walon ke saath hai.",
+  "mood": "spiritual",
+  "topic": "sabr",
+  "author": "Surah Al-Baqarah 2:153",
+  "source": "https://legacy.quran.com/2/153-207"
+ }
+]
