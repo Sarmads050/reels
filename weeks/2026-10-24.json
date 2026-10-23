@@ -1,0 +1,24 @@
+[
+ {
+  "id": "2026-10-24_am",
+  "scene": "sunset",
+  "label": "EK TARFA",
+  "line1": "Patta patta boota boota haal hamara jaane hai,",
+  "line2": "jaane na jaane gul hi na jaane, baagh to saara jaane hai.",
+  "mood": "sad",
+  "topic": "sad love (one-sided)",
+  "author": "Mir Taqi Mir",
+  "source": "https://www.rekhta.org/contributors/meer-taqi-meer/all"
+ },
+ {
+  "id": "2026-10-24_pm",
+  "scene": "rain",
+  "label": "KHWAHISHEN",
+  "line1": "Hazaron khwahishen aisi ke har khwahish pe dam nikle,",
+  "line2": "bahut nikle mere armaan lekin phir bhi kam nikle.",
+  "mood": "sad",
+  "topic": "tanhai / deep",
+  "author": "Mirza Ghalib",
+  "source": "https://rekhta.org/Top-20-Mirza-Ghalib-Sher"
+ }
+]
