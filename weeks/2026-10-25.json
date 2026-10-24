@@ -1,0 +1,24 @@
+[
+ {
+  "id": "2026-10-25_am",
+  "scene": "city",
+  "label": "INSAAN",
+  "line1": "Bas ki dushwar hai har kaam ka aasan hona,",
+  "line2": "aadmi ko bhi mayassar nahin insaan hona.",
+  "mood": "sad",
+  "topic": "reality / self-respect",
+  "author": "Mirza Ghalib",
+  "source": "https://rekhta.org/Top-20-Mirza-Ghalib-Sher"
+ },
+ {
+  "id": "2026-10-25_pm",
+  "scene": "mist",
+  "label": "MOHABBAT",
+  "line1": "Mohabbat mein nahin hai farq jeene aur marne ka,",
+  "line2": "usi ko dekh kar jeete hain jis kafir pe dam nikle.",
+  "mood": "romantic",
+  "topic": "mohabbat",
+  "author": "Mirza Ghalib",
+  "source": "https://rekhta.org/Top-20-Mirza-Ghalib-Sher"
+ }
+]
