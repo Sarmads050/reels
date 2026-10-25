@@ -35,28 +35,32 @@ Metricool brand id `7403821`. vidIQ account `quotations_and_quotes`.
 
 ## Topics (owner's decision, 18 Oct 2026, from the topic research)
 
-Weekly mix of 14 reels (`topic` field). Weekday → 10:00 / 18:00:
+Weekly mix of 14 reels (`topic` field). **Owner's decision, 25 Oct 2026: "sab se ziyada umeed, hosla, acha time aayega, na-umeed nahi karo, sab ke saath acha karo… aaj kal log bohat depression ke shikar hain."** So most reels lift people up. Weekday → 10:00 / 18:00:
 
 | Day | 10:00 | 18:00 |
 |---|---|---|
-| Saturday | sad love (yaadein / bewafai / one-sided) | tanhai / deep |
-| Sunday | reality / self-respect (log, qadar, asliyat) | mohabbat |
-| Monday | himmat / umeed | sad love |
-| Tuesday | reality / self-respect | tanhai / deep |
-| Wednesday | spiritual (sabr / tawakkul) | sad love |
-| Thursday | reality / self-respect | test: maa / family (odd ISO weeks), dosti (even ISO weeks) |
-| Friday | Juma dua | sabr |
+| Saturday | umeed (acha waqt aayega) | tanhai / deep (ending with hope) |
+| Sunday | hosla / himmat | sab ke saath acha karo (kindness, naiki) |
+| Monday | umeed (mushkil guzar jayegi) | mohabbat |
+| Tuesday | hosla / khud par yaqeen | reality / self-respect (positive turn) |
+| Wednesday | sabr (achha waqt aayega) | sab ke saath acha karo |
+| Thursday | umeed / na-umeed mat ho | maa / family (odd ISO weeks), dosti (even ISO weeks) |
+| Friday | Juma dua (our own original dua lines) | hosla / himmat |
 
-Write lines that speak **to someone** (so people send them). Seasonal: December → more sad/tanhai; Ramadan 2027 (about 8 Feb–9 Mar, confirm moon sighting) → about half the reels spiritual, plus Eid reels; 14 August → one Pakistan reel. Every 4 weeks, check Insights (sends, saves, likes per 1,000 reach by topic) and tell the owner which topic to give one more slot.
+- 10 of 14 reels are hope / courage / kindness. The others (tanhai, mohabbat, reality, family) must also **end with hope or warmth**: never hopeless, never "zindagi bekaar hai", nothing about giving up, death wishes or self-harm.
+- Tone: like a kind friend telling someone who is sad or depressed "ruk jao, acha waqt aayega, tum akele nahi ho". Simple words, warm, sendable.
+
+Write lines that speak **to someone** (so people send them). Seasonal: December → keep the same hopeful mix (winter loneliness: "tum akele nahi ho"); Ramadan 2027 (about 8 Feb–9 Mar, confirm moon sighting) → more dua/sabr/shukr reels (our own lines, no Quran/hadith), plus Eid reels; 14 August → one Pakistan reel. Every 4 weeks, check Insights (sends, saves, likes per 1,000 reach by topic) and tell the owner which topic to give one more slot.
 
 ## Famous lines first (owner's decision, 18 Oct 2026)
 
 For every topic, first use **famous lines by well-known people** on that topic; only when no new verified famous line fits, write our own original line (researching the topic first).
-- Allowed: classical poets who died more than 50 years ago (public domain in Pakistan), e.g. Mirza Ghalib, Mir Taqi Mir, Allama Iqbal, Daagh Dehlvi, Momin, Zauq, Akbar Allahabadi, Bulleh Shah, Sultan Bahu, Khwaja Ghulam Farid, Hali, Nazeer Akbarabadi; authentic hadith (only if found on sunnah.com with a grade of sahih/hasan, with the reference); sayings of Hazrat Ali (only if traced to Nahj al-Balagha with the saying number).
-- **No Quran reels** (owner, 25 Oct 2026: "Quran ki reel nhi banow"): never use Quran ayaat or their translation/meaning on a reel, also not for spiritual/Juma/sabr topics or in Ramadan; use poets, hadith, Hazrat Ali or our own original lines instead.
+- Allowed: classical poets who died more than 50 years ago (public domain in Pakistan), e.g. Mirza Ghalib, Mir Taqi Mir, Allama Iqbal, Daagh Dehlvi, Momin, Zauq, Akbar Allahabadi, Bulleh Shah, Sultan Bahu, Khwaja Ghulam Farid, Hali, Nazeer Akbarabadi.
+- **No Quran reels** (owner, 25 Oct 2026: "Quran ki reel nhi banow"): never use Quran ayaat or their translation/meaning on a reel, also not for spiritual/Juma/sabr topics or in Ramadan; use poets or our own original lines instead.
+- **No hadith and no sayings of religious figures** (owner, 25 Oct 2026: "koi hadees na rakho, maloom nahi wo original hai ya nahi"): no hadith, no "Hazrat Ali ne farmaya", no saying of any sahabi, imam or saint. Only classical poets' verified couplets or our own original lines.
 - **Not allowed** (copyright): modern poets, e.g. Faiz Ahmed Faiz, Jaun Elia, Ahmad Faraz, Parveen Shakir, Mohsin Naqvi, Wasi Shah, Tehzeeb Hafi, Ali Zaryoun, Gulzar, Javed Akhtar, and any song lyrics. If unsure whether a poet died 50+ years ago, do not use them.
-- **Verify every famous line** before using it: exact wording and poet on rekhta.org (or another reliable source for sayings). Many lines shared online are misattributed: if the line or the attribution cannot be confirmed, do not use it. Save the link as `source`.
-- Show the poet/source on the reel (`author`, e.g. "Mirza Ghalib", "Allama Iqbal", "Sahih Bukhari 6018") and in the caption's first line. Use the couplet in Roman Urdu exactly as verified (line1 = first misra, line2 = second misra).
+- **Verify every famous line** before using it: exact wording and poet on rekhta.org . Many lines shared online are misattributed: if the line or the attribution cannot be confirmed, do not use it. Save the link as `source`.
+- Show the poet/source on the reel (`author`, e.g. "Mirza Ghalib", "Allama Iqbal") and in the caption's first line. Use the couplet in Roman Urdu exactly as verified (line1 = first misra, line2 = second misra).
 - Keep a list of famous lines already used in `famous_used.json` ({text, author, source, date}) and never repeat one.
 
 ## Mood groups
@@ -64,7 +68,7 @@ For every topic, first use **famous lines by well-known people** on that topic; 
 - `sad`: reality, deep, zindagi, tanhai, dil ki baat, yaadein, sad lines
 - `romantic`: mohabbat, love, yaadein (romantic)
 - `spiritual`: sabr, dua, Juma, Allah, faith
-- `hope`: himmat, umeed, safar, motivation
+- `hope`: himmat, umeed, hosla, acha waqt aayega, sab ke saath acha karo (kindness), safar, motivation
 
 ## Song research (no vidIQ credits)
 
