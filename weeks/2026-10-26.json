@@ -1,0 +1,24 @@
+[
+ {
+  "id": "2026-10-26_am",
+  "scene": "sunrise",
+  "label": "UMEED",
+  "line1": "Nahin hai na-umeed Iqbal apni kisht-e-veeran se,",
+  "line2": "zara nam ho to ye mitti bahut zarkhez hai saqi.",
+  "mood": "hope",
+  "topic": "umeed (mushkil guzar jayegi)",
+  "author": "Allama Iqbal",
+  "source": "https://cdn.rekhta.org/poets/allama-iqbal/couplets"
+ },
+ {
+  "id": "2026-10-26_pm",
+  "scene": "sunset",
+  "label": "MOHABBAT",
+  "line1": "Tum mere paas hote ho goya,",
+  "line2": "jab koi dusra nahin hota.",
+  "mood": "romantic",
+  "topic": "mohabbat",
+  "author": "Momin Khan Momin",
+  "source": "https://rekhta.org/poets/momin-khan-momin/couplets"
+ }
+]
