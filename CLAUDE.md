@@ -52,10 +52,11 @@ Write lines that speak **to someone** (so people send them). Seasonal: December 
 ## Famous lines first (owner's decision, 18 Oct 2026)
 
 For every topic, first use **famous lines by well-known people** on that topic; only when no new verified famous line fits, write our own original line (researching the topic first).
-- Allowed: classical poets who died more than 50 years ago (public domain in Pakistan), e.g. Mirza Ghalib, Mir Taqi Mir, Allama Iqbal, Daagh Dehlvi, Momin, Zauq, Akbar Allahabadi, Bulleh Shah, Sultan Bahu, Khwaja Ghulam Farid, Hali, Nazeer Akbarabadi; Quran (our own Roman Urdu meaning, with surah:ayah); authentic hadith (only if found on sunnah.com with a grade of sahih/hasan, with the reference); sayings of Hazrat Ali (only if traced to Nahj al-Balagha with the saying number).
+- Allowed: classical poets who died more than 50 years ago (public domain in Pakistan), e.g. Mirza Ghalib, Mir Taqi Mir, Allama Iqbal, Daagh Dehlvi, Momin, Zauq, Akbar Allahabadi, Bulleh Shah, Sultan Bahu, Khwaja Ghulam Farid, Hali, Nazeer Akbarabadi; authentic hadith (only if found on sunnah.com with a grade of sahih/hasan, with the reference); sayings of Hazrat Ali (only if traced to Nahj al-Balagha with the saying number).
+- **No Quran reels** (owner, 25 Oct 2026: "Quran ki reel nhi banow"): never use Quran ayaat or their translation/meaning on a reel, also not for spiritual/Juma/sabr topics or in Ramadan; use poets, hadith, Hazrat Ali or our own original lines instead.
 - **Not allowed** (copyright): modern poets, e.g. Faiz Ahmed Faiz, Jaun Elia, Ahmad Faraz, Parveen Shakir, Mohsin Naqvi, Wasi Shah, Tehzeeb Hafi, Ali Zaryoun, Gulzar, Javed Akhtar, and any song lyrics. If unsure whether a poet died 50+ years ago, do not use them.
 - **Verify every famous line** before using it: exact wording and poet on rekhta.org (or another reliable source for sayings). Many lines shared online are misattributed: if the line or the attribution cannot be confirmed, do not use it. Save the link as `source`.
-- Show the poet/source on the reel (`author`, e.g. "Mirza Ghalib", "Allama Iqbal", "Surah Al-Baqarah 2:153") and in the caption's first line. Use the couplet in Roman Urdu exactly as verified (line1 = first misra, line2 = second misra).
+- Show the poet/source on the reel (`author`, e.g. "Mirza Ghalib", "Allama Iqbal", "Sahih Bukhari 6018") and in the caption's first line. Use the couplet in Roman Urdu exactly as verified (line1 = first misra, line2 = second misra).
 - Keep a list of famous lines already used in `famous_used.json` ({text, author, source, date}) and never repeat one.
 
 ## Mood groups
