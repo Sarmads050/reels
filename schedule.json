@@ -360,7 +360,7 @@
   "permalink": null,
   "channel": "metricool_notify",
   "style": "916_light_lora",
-  "sent_to_owner": false,
+  "sent_to_owner": true,
   "ig_song": null,
   "metricool_id": "405093284",
   "metricool_uuid": "-2843865497670497922",
@@ -371,7 +371,8 @@
   "scene": "city",
   "author": "Mirza Ghalib",
   "source": "https://rekhta.org/Top-20-Mirza-Ghalib-Sher",
-  "caption": "Reality | Mirza Ghalib ki shayari — aadmi hona aasan hai, insaan banna mushkil; log, qadar aur asliyat ka sach.\nUs insaan ko bhejo jo sach mein insaan hai 🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #ghalib #romanurdu #realityquotes #urduquotes"
+  "caption": "Reality | Mirza Ghalib ki shayari — aadmi hona aasan hai, insaan banna mushkil; log, qadar aur asliyat ka sach.\nUs insaan ko bhejo jo sach mein insaan hai 🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #ghalib #romanurdu #realityquotes #urduquotes",
+  "note": "25 Oct: owner could not download from Metricool (free limit); MP4 + caption sent in Claude chat"
  },
  {
   "approved": true,
@@ -380,7 +381,7 @@
   "permalink": null,
   "channel": "metricool_notify",
   "style": "916_light_lora",
-  "sent_to_owner": false,
+  "sent_to_owner": true,
   "ig_song": null,
   "metricool_id": "405093310",
   "metricool_uuid": "-6138741552113892129",
@@ -391,6 +392,7 @@
   "scene": "mist",
   "author": "Mirza Ghalib",
   "source": "https://rekhta.org/Top-20-Mirza-Ghalib-Sher",
-  "caption": "Mohabbat | Mirza Ghalib ki shayari — jis se mohabbat ho, usi ko dekh kar jeena; ishq aur dil ki baat ek sher mein.\nJise dekh kar jeete ho, usay yeh reel bhej do 💌\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #ghalib #romanurdu #mohabbat #urduquotes"
+  "caption": "Mohabbat | Mirza Ghalib ki shayari — jis se mohabbat ho, usi ko dekh kar jeena; ishq aur dil ki baat ek sher mein.\nJise dekh kar jeete ho, usay yeh reel bhej do 💌\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #ghalib #romanurdu #mohabbat #urduquotes",
+  "note": "25 Oct: owner could not download from Metricool (free limit); MP4 + caption sent in Claude chat"
  }
 ]
