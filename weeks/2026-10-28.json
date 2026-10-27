@@ -1,0 +1,24 @@
+[
+ {
+  "id": "2026-10-28_am",
+  "scene": "rain",
+  "label": "SABR",
+  "line1": "Ranj se khugar hua insan to mit jata hai ranj,",
+  "line2": "mushkilen mujh par padin itni ki aasan ho gain.",
+  "mood": "spiritual",
+  "topic": "sabr (achha waqt aayega)",
+  "author": "Mirza Ghalib",
+  "source": "https://rekhta.org/Top-20-Mirza-Ghalib-Sher"
+ },
+ {
+  "id": "2026-10-28_pm",
+  "scene": "sunset",
+  "label": "NAIKI",
+  "line1": "Hain log wahi jahan mein achchhe,",
+  "line2": "aate hain jo kaam dusron ke.",
+  "mood": "hope",
+  "topic": "sab ke saath acha karo",
+  "author": "Allama Iqbal",
+  "source": "https://cdn.rekhta.org/nazms/poetry-for-children/hamdardii-tahnii-pe-kisii-shajar-kii-tanhaa-allama-iqbal-nazms"
+ }
+]
