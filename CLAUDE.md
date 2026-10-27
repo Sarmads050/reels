@@ -9,16 +9,17 @@ This repo holds the reels for the Instagram account **@quotations_and_quotes** (
 - `weeks/` — the quote lists the reels were made from (daily files `<date>.json` since 18 Oct 2026).
 - `tools/` — `make_reels.sh <posts.json> <out_dir> [seed]` renders silent reels in the house style (`reel916.py`; scenes come from `premium.py`). `add_music.py` (old, for the 15 s music reels) is **not used any more**: do not run it.
 
-## How posting works (owner's decision, 18 Oct 2026: "Metricool notification, song khud lagaunga")
+## How posting works (owner's decision, 27 Oct 2026: "Buffer se auto posting… upload hone ke baad reel edit kar ke song khud laga dunga")
 
-Two reels a day, **10:00 and 18:00 Karachi**, made **daily** (the evening before). **We never publish to Instagram ourselves.** The owner adds a trending song in the Instagram app and posts each reel himself.
+Two reels a day, **10:00 and 18:00 Karachi**, made **daily** (the evening before). Since 27 Oct 2026 every reel is **published automatically through Buffer** (`channel: buffer`) at its slot; the owner then edits the posted reel in the Instagram app and adds a song himself.
 
-- Each reel is scheduled in Metricool with **`autoPublish: false`** (manual publishing via notification) and **no `audioConfiguration`**, `channel: metricool_notify`. At the slot time the Metricool phone app notifies him; tapping it saves the video to his gallery and copies the caption; he opens Instagram, picks the video, adds a song, pastes the caption and posts. (The Instagram API cannot create Instagram drafts, so this is the closest to "draft".)
-- Do **not** send the reels to the owner in advance (owner, 18 Oct: "kal ki video kal bhejna"); the Metricool notification at the slot time is the delivery.
-- If Metricool refuses a post (e.g. the free plan's 20-a-month limit or an error), the Claude copy is the only delivery: `channel: manual`, note the error, and send a `PushNotification` "yeh reel manually Instagram par upload kar dein".
-- Never publish through vidIQ or with `autoPublish: true`. Reels are **silent** (owner, 18 Oct: "background ma voice remove kar do"); he adds an Instagram song himself when posting.
+- Buffer organization `6ae0788be586811d71fdec73` ("My organization"), Instagram channel `6ae07a3a2f1f5ed648e8755e` (quotations_and_quotes, business). Free plan: max **10 scheduled posts at a time** (no monthly cap), 3 channels. We only ever schedule tomorrow's 2 reels, so this is never reached.
+- Each reel: `create_post` with `schedulingType: automatic`, `mode: customScheduled`, `dueAt` = slot with +05:00, `text` = exact caption, `assets` [{video: {url: raw GitHub link}}], `metadata.instagram` {`type: reel`, `shouldShareToFeed: true`}. Save the returned id as `buffer_id`. Reels stay **silent** (no song in the file, no add_music.py).
+- Do **not** also schedule the reel in Metricool (that would post it twice). Metricool (`metricool_notify`, autoPublish false) is only the fallback when Buffer refuses a reel; if both refuse: `channel: manual`, send the MP4 + caption with `SendUserFile` and a `PushNotification` "yeh reel manually Instagram par upload kar dein".
+- Never publish through vidIQ, and never with Metricool `autoPublish: true`.
+- Open check (27 Oct): whether Instagram lets the owner add a song to an already-posted reel. If he reports it does not, ask him before changing anything (option: our own soft music from `sounds/` in the file).
 
-Video URLs (both channels) are GitHub raw links: `https://raw.githubusercontent.com/Sarmads050/reels/main/<file>`.
+Video URLs (all channels) are GitHub raw links: `https://raw.githubusercontent.com/Sarmads050/reels/main/<file>`.
 Metricool brand id `7403821`. vidIQ account `quotations_and_quotes`.
 
 ## Rules that never change
@@ -88,12 +89,12 @@ Test draft for library lookups: Metricool post uuid `7689021596470561225` (a dra
 1. `git pull`. Drop entries from `schedule.json` whose slot is more than 14 days old (and `git rm` their media files).
 2. Sundays only: results of the last 7 days with `vidiq_instagram_owner_insights` (and `vidiq_ig_profile_reels`); a short summary for the owner (moods, morning vs evening).
 3. If tomorrow already has entries in `schedule.json`, skip to step 5. Otherwise pick tomorrow's 2 topics from "Topics" (by weekday) and write the 2 quotes following "Famous lines first". Never repeat a quote already used (check `weeks/` and `schedule.json`). Each: `id`, `scene` (sunset, mist, sunrise, road, city, rain; vary, never the same as the previous reel), `label` (one or two words, CAPS), `line1`, `line2`, `mood`, `topic`, and for famous lines `author` (shown on the reel as "— <author>") and `source` (the verification link). Save as `weeks/<date>.json`.
-4. Render with `tools/make_reels.sh weeks/<date>.json <tmp> <new seed>` (pip install numpy/pillow/fonttools/scipy with `--break-system-packages` if missing; ffmpeg needed). Look at each `_preview.png`; fix and re-render anything hard to read. Copy MP4s to `media/<date>_am.mp4` / `_pm.mp4`; add entries (`mood`, `scene`, caption in the format under "Captions"; `approved: true`, `posted: false`, `channel: metricool_notify`). Do not run `add_music.py`. Commit and push (the raw link must exist before Metricool fetches it).
-5. Schedule every `metricool_notify` entry without a `metricool_uuid` (see "Scheduling in Metricool"). Failure → `channel: manual`, note the error.
+4. Render with `tools/make_reels.sh weeks/<date>.json <tmp> <new seed>` (pip install numpy/pillow/fonttools/scipy with `--break-system-packages` if missing; ffmpeg needed). Look at each `_preview.png`; fix and re-render anything hard to read. Copy MP4s to `media/<date>_am.mp4` / `_pm.mp4`; add entries (`mood`, `scene`, caption in the format under "Captions"; `approved: true`, `posted: false`, `channel: buffer`). Do not run `add_music.py`. Commit and push (the raw link must exist before Metricool fetches it).
+5. Schedule every `buffer` entry without a `buffer_id` in Buffer (see "How posting works"). Buffer failure → try Metricool notification (see "Scheduling in Metricool", `channel: metricool_notify`); that failing too → `channel: manual`, note the errors.
 6. Only for `manual` entries (Metricool refused them): send the MP4 to the owner with `SendUserFile` plus time, exact caption and a suggested trending slow song, and a `PushNotification`; set `sent_to_owner: true`. Commit and push.
-7. Message the owner in one or two short Roman Urdu lines: tomorrow's 2 reels are set in Metricool (times, mood, a suggested trending slow song each), or which reel must be uploaded from the Claude copy. Sundays: add the weekly summary.
+7. Message the owner in one or two short Roman Urdu lines: tomorrow's 2 reels will auto-post through Buffer (times, mood, a suggested slow song each to add after posting), or which reel must be uploaded from the Claude copy. Sundays: add the weekly summary.
 
-## Scheduling in Metricool
+## Scheduling in Metricool (fallback only)
 
 `createScheduledPost` (blogId `7403821`, date = slot with +05:00): `autoPublish: false`, `draft: false`, `media` = [raw GitHub link], `text` = exact caption, `providers` [instagram], `publicationDate` {slot, `Asia/Karachi`}, `instagramData` {`type: REEL`, `showReelOnFeed: true`} (no audioConfiguration). Save `metricool_id`, `metricool_uuid`.
 

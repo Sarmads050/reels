@@ -460,7 +460,7 @@
   "sound": null,
   "posted": false,
   "permalink": null,
-  "channel": "metricool_notify",
+  "channel": "buffer",
   "style": "916_light_lora",
   "sent_to_owner": true,
   "ig_song": null,
@@ -473,6 +473,7 @@
   "scene": "mist",
   "author": "Allama Iqbal",
   "source": "https://cdn.rekhta.org/poets/allama-iqbal/couplets",
-  "caption": "Reality | Allama Iqbal ki shayari — koi saath de ya na de, pehle apne aap ka ban jao; izzat-e-nafs aur sukoon andar se aata hai.\nJise is waqt yeh sunne ki zaroorat hai, usay yeh reel bhej do 🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #iqbalshayari #romanurdu #selfrespect #urduquotes"
+  "caption": "Reality | Allama Iqbal ki shayari — koi saath de ya na de, pehle apne aap ka ban jao; izzat-e-nafs aur sukoon andar se aata hai.\nJise is waqt yeh sunne ki zaroorat hai, usay yeh reel bhej do 🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #iqbalshayari #romanurdu #selfrespect #urduquotes",
+  "buffer_id": "6ae07a58f8fdca14fefc0a7b"
  }
 ]
