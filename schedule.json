@@ -458,7 +458,7 @@
  {
   "approved": true,
   "sound": null,
-  "posted": false,
+  "posted": true,
   "permalink": null,
   "channel": "buffer",
   "style": "916_light_lora",
@@ -474,6 +474,7 @@
   "author": "Allama Iqbal",
   "source": "https://cdn.rekhta.org/poets/allama-iqbal/couplets",
   "caption": "Reality | Allama Iqbal ki shayari — koi saath de ya na de, pehle apne aap ka ban jao; izzat-e-nafs aur sukoon andar se aata hai.\nJise is waqt yeh sunne ki zaroorat hai, usay yeh reel bhej do 🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #iqbalshayari #romanurdu #selfrespect #urduquotes",
-  "buffer_id": "6ae07a58f8fdca14fefc0a7b"
+  "buffer_id": "6ae07a58f8fdca14fefc0a7b",
+  "note": "27 Oct: auto-posted silent via Buffer test; owner could not add a song after posting -> auto posting stopped; MP4 resent to owner"
  }
 ]
