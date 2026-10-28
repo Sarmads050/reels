@@ -1,0 +1,22 @@
+[
+ {
+  "id": "2026-10-29_am",
+  "scene": "sunrise",
+  "label": "UMEED",
+  "line1": "Sitaron se aage jahan aur bhi hain,",
+  "line2": "abhi ishq ke imtihan aur bhi hain.",
+  "mood": "hope",
+  "topic": "umeed / na-umeed mat ho",
+  "author": "Allama Iqbal",
+  "source": "https://rekhta.org/couplets/sitaaron-se-aage-jahaan-aur-bhii-hain-allama-iqbal-couplets"
+ },
+ {
+  "id": "2026-10-29_pm",
+  "scene": "road",
+  "label": "DOSTI",
+  "line1": "Sacha dost woh hai jo tumhari khamoshi bhi sun le,",
+  "line2": "aur kahe: fikr na karo, main hoon na.",
+  "mood": "hope",
+  "topic": "dosti"
+ }
+]

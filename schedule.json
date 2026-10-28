@@ -1,28 +1,5 @@
 [
  {
-  "slot": "2026-10-14T10:00:00+05:00",
-  "file": "media/w1_d1_am.mp4",
-  "caption": "Har muskurata chehra apna nahi hota. Aap ne yeh sabaq kab seekha? Save karo taake yaad rahe.\n\nFollow @quotations_and_quotes for daily deep lines\n\n#realitylines #deepquotes #urduquotes #lifelessons #quotesoftheday",
-  "approved": true,
-  "mood": "reality",
-  "sound": "1_lofi_udaas_piano.mp3",
-  "posted": true,
-  "permalink": "https://www.instagram.com/reel/DeciyBqDEms/",
-  "note": "Posted early as a test on owner request, 13 Oct 2026 ~00:20 PKT",
-  "channel": "vidiq"
- },
- {
-  "slot": "2026-10-14T18:00:00+05:00",
-  "file": "media/w1_d1_pm.mp4",
-  "caption": "Kuch baatein kehne ke liye nahi, mehsoos karne ke liye hoti hain. Agar yeh aap ki kahani hai to Save karo.\n\nFollow @quotations_and_quotes for daily deep lines\n\n#sadquotes #dilkibaat #urdupoetry #deeplines #lonelyquotes",
-  "approved": true,
-  "mood": "dil ki baat (sad)",
-  "sound": "4_romantic_guitar.mp3",
-  "posted": true,
-  "permalink": "https://www.instagram.com/reel/Deeb9QiifBH/",
-  "channel": "vidiq"
- },
- {
   "slot": "2026-10-15T10:00:00+05:00",
   "file": "media/w1_d2_am.mp4",
   "caption": "Kabhi bheed mein bhi akela mehsoos kiya hai? Comment mein sirf ek lafz likho.\n\nFollow @quotations_and_quotes for daily deep lines\n\n#tanhai #lonelyquotes #sadquotes #urdupoetry #deeplines",
@@ -518,5 +495,45 @@
   "author": "Allama Iqbal",
   "source": "https://cdn.rekhta.org/nazms/poetry-for-children/hamdardii-tahnii-pe-kisii-shajar-kii-tanhaa-allama-iqbal-nazms",
   "caption": "Naiki | Allama Iqbal ki shayari — sab ke saath acha karo, duniya mein ache log wahi hain jo dusron ke kaam aate hain.\nUs insaan ko bhejo jo hamesha sab ki madad karta hai 🌸\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #iqbalshayari #romanurdu #naiki #urduquotes"
+ },
+ {
+  "approved": true,
+  "sound": null,
+  "posted": false,
+  "permalink": null,
+  "channel": "buffer_notify",
+  "style": "916_light_lora",
+  "sent_to_owner": false,
+  "ig_song": null,
+  "buffer_id": null,
+  "metricool_id": null,
+  "metricool_uuid": null,
+  "slot": "2026-10-29T10:00:00+05:00",
+  "file": "media/2026-10-29_am.mp4",
+  "mood": "hope",
+  "topic": "umeed / na-umeed mat ho",
+  "scene": "sunrise",
+  "author": "Allama Iqbal",
+  "source": "https://rekhta.org/couplets/sitaaron-se-aage-jahaan-aur-bhii-hain-allama-iqbal-couplets",
+  "caption": "Umeed | Allama Iqbal ki shayari — na-umeed mat ho, sitaron se aage aur bhi jahan hain; acha waqt abhi aana hai.\nUs dost ko bhejo jo aaj himmat haar raha hai 🌅\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #iqbalshayari #romanurdu #umeed #urduquotes"
+ },
+ {
+  "approved": true,
+  "sound": null,
+  "posted": false,
+  "permalink": null,
+  "channel": "buffer_notify",
+  "style": "916_light_lora",
+  "sent_to_owner": false,
+  "ig_song": null,
+  "buffer_id": null,
+  "metricool_id": null,
+  "metricool_uuid": null,
+  "slot": "2026-10-29T18:00:00+05:00",
+  "file": "media/2026-10-29_pm.mp4",
+  "mood": "hope",
+  "topic": "dosti",
+  "scene": "road",
+  "caption": "Dosti | Roman Urdu shayari — sacha dost woh jo bina kahe dil ki baat samajh le aur mushkil waqt mein saath khada rahe.\nApne us best friend ko bhejo jo hamesha kehta hai \"main hoon na\" 🤝\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #dostishayari #romanurdu #dosti #urduquotes"
  }
 ]
