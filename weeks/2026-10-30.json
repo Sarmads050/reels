@@ -1,0 +1,22 @@
+[
+ {
+  "id": "2026-10-30_am",
+  "scene": "mist",
+  "label": "JUMA DUA",
+  "line1": "Ya Allah, jo dil aaj thak gaye hain, unhein sukoon de,",
+  "line2": "aur har bheegi aankh mein phir se muskurahat laut aaye. Ameen.",
+  "mood": "spiritual",
+  "topic": "Juma dua"
+ },
+ {
+  "id": "2026-10-30_pm",
+  "scene": "sunset",
+  "label": "HOSLA",
+  "line1": "Yaqin mohkam, amal paiham, mohabbat fatah-e-alam,",
+  "line2": "jihad-e-zindagani mein hain ye mardon ki shamshiren.",
+  "mood": "hope",
+  "topic": "hosla / himmat",
+  "author": "Allama Iqbal",
+  "source": "https://rekhta.org/couplets/yaqiin-mohkam-amal-paiham-mohabbat-faatah-e-aalam-allama-iqbal-couplets"
+ }
+]
