@@ -27,7 +27,7 @@ Metricool brand id `7403821`. vidIQ account `quotations_and_quotes`.
 
 - Never post the same entry twice. If anything fails, do not retry in a loop: record `"error"` on the entry, push, and tell the owner.
 - Only post entries with `approved: true`. If the owner ever asks to check reels before posting, set new entries to `approved: false` until he says yes.
-- Quotes are in Roman Urdu and follow "Topics" and "Famous lines first" below: famous lines only from **public-domain** classical poets or verified sayings, always credited; otherwise our own original lines. Never song lyrics, never lines of modern copyrighted poets.
+- Quotes are in Roman Urdu, our **own original simple lines** (see "Our own simple lines"); Allama Iqbal banned; no famous couplets unless the owner asks. Never song lyrics, never lines of modern copyrighted poets.
 - Our video files are silent (older ones contain only tracks from `sounds/`). Songs are added only through Instagram's own music library; never download a song or put it into a file.
 - **No reel goes out without music**: the owner adds the Instagram song himself when he posts.
 - vidIQ credits are limited (150 a month). Song research uses **no** vidIQ credits (owner's rule).
@@ -54,16 +54,18 @@ Weekly mix of 14 reels (`topic` field). **Owner's decision, 25 Oct 2026: "sab se
 
 Write lines that speak **to someone** (so people send them). Seasonal: December → keep the same hopeful mix (winter loneliness: "tum akele nahi ho"); Ramadan 2027 (about 8 Feb–9 Mar, confirm moon sighting) → more dua/sabr/shukr reels (our own lines, no Quran/hadith), plus Eid reels; 14 August → one Pakistan reel. Every 4 weeks, check Insights (sends, saves, likes per 1,000 reach by topic) and tell the owner which topic to give one more slot.
 
-## Famous lines first (owner's decision, 18 Oct 2026)
+## Our own simple lines (owner's decision, 30 Oct 2026 — replaces "Famous lines first")
 
-For every topic, first use **famous lines by well-known people** on that topic; only when no new verified famous line fits, write our own original line (researching the topic first).
-- Allowed: classical poets who died more than 50 years ago (public domain in Pakistan), e.g. Mirza Ghalib, Mir Taqi Mir, Allama Iqbal, Daagh Dehlvi, Momin, Zauq, Akbar Allahabadi, Bulleh Shah, Sultan Bahu, Khwaja Ghulam Farid, Hali, Nazeer Akbarabadi.
-- **No Quran reels** (owner, 25 Oct 2026: "Quran ki reel nhi banow"): never use Quran ayaat or their translation/meaning on a reel, also not for spiritual/Juma/sabr topics or in Ramadan; use poets or our own original lines instead.
-- **No hadith and no sayings of religious figures** (owner, 25 Oct 2026: "koi hadees na rakho, maloom nahi wo original hai ya nahi"): no hadith, no "Hazrat Ali ne farmaya", no saying of any sahabi, imam or saint. Only classical poets' verified couplets or our own original lines.
-- **Not allowed** (copyright): modern poets, e.g. Faiz Ahmed Faiz, Jaun Elia, Ahmad Faraz, Parveen Shakir, Mohsin Naqvi, Wasi Shah, Tehzeeb Hafi, Ali Zaryoun, Gulzar, Javed Akhtar, and any song lyrics. If unsure whether a poet died 50+ years ago, do not use them.
-- **Verify every famous line** before using it: exact wording and poet on rekhta.org . Many lines shared online are misattributed: if the line or the attribution cannot be confirmed, do not use it. Save the link as `source`.
-- Show the poet/source on the reel (`author`, e.g. "Mirza Ghalib", "Allama Iqbal") and in the caption's first line. Use the couplet in Roman Urdu exactly as verified (line1 = first misra, line2 = second misra).
-- Keep a list of famous lines already used in `famous_used.json` ({text, author, source, date}) and never repeat one.
+Owner, 30 Oct 2026: "Allama Iqbal ki banana ban karo, apni taraf se quotes banow jo asan ho or humans feel bhi kar pay" — Iqbal's (and other classical poets') couplets were too hard for normal people to understand.
+
+- **Every reel uses our own original line.** No famous couplets from classical poets (Allama Iqbal, Mirza Ghalib, Mir Taqi Mir, Daagh, Momin, etc.) unless the owner asks for one again.
+- **Allama Iqbal is banned completely** — never his lines, never "Iqbal ki shayari" in a caption.
+- Still no Quran, no hadith, no sayings of religious figures, no modern poets, no song lyrics (owner, 25 Oct 2026).
+- **Easy words:** everyday Roman Urdu that a normal person (school level, no Persian/Arabic heavy words) understands on first read. Avoid words like khudi, shaheen, kisht-e-veeran, mohkam, paiham, khugar, visal, mayassar, jahan-e-digar. Test: if a 15-year-old would need to ask "iska matlab kya hai?", rewrite it.
+- **Feelable:** speak to the reader about something they live through (thakan, akelapan, intezaar, ghar, maa, dost, mehnat, dua), like a kind friend. Short: line1 max ~8 words, line2 max ~10 words. Concrete images (raat, chai, barish, safar, darwaza) are better than abstract ideas.
+- Before writing, check `weeks/` and `schedule.json` so a line or idea is never repeated.
+- No `author` on the reel (our lines carry only the `@quotations_and_quotes` watermark). Caption first line: "<Mood> | Roman Urdu shayari — ...".
+- `famous_used.json` stays as history only; nothing new is added to it.
 
 ## Mood groups
 
@@ -89,7 +91,7 @@ Test draft for library lookups: Metricool post uuid `7689021596470561225` (a dra
 
 1. `git pull`. Drop entries from `schedule.json` whose slot is more than 14 days old (and `git rm` their media files).
 2. Sundays only: results of the last 7 days with `vidiq_instagram_owner_insights` (and `vidiq_ig_profile_reels`); a short summary for the owner (moods, morning vs evening).
-3. If tomorrow already has entries in `schedule.json`, skip to step 5. Otherwise pick tomorrow's 2 topics from "Topics" (by weekday) and write the 2 quotes following "Famous lines first". Never repeat a quote already used (check `weeks/` and `schedule.json`). Each: `id`, `scene` (sunset, mist, sunrise, road, city, rain; vary, never the same as the previous reel), `label` (one or two words, CAPS), `line1`, `line2`, `mood`, `topic`, and for famous lines `author` (shown on the reel as "— <author>") and `source` (the verification link). Save as `weeks/<date>.json`.
+3. If tomorrow already has entries in `schedule.json`, skip to step 5. Otherwise pick tomorrow's 2 topics from "Topics" (by weekday) and write the 2 quotes following "Our own simple lines" (own original, easy, feelable; never Iqbal). Never repeat a quote already used (check `weeks/` and `schedule.json`). Each: `id`, `scene` (sunset, mist, sunrise, road, city, rain; vary, never the same as the previous reel), `label` (one or two words, CAPS), `line1`, `line2`, `mood`, `topic` (no `author`: our own lines). Save as `weeks/<date>.json`.
 4. Render with `tools/make_reels.sh weeks/<date>.json <tmp> <new seed>` (pip install numpy/pillow/fonttools/scipy with `--break-system-packages` if missing; ffmpeg needed). Look at each `_preview.png`; fix and re-render anything hard to read. Copy MP4s to `media/<date>_am.mp4` / `_pm.mp4`; add entries (`mood`, `scene`, caption in the format under "Captions"; `approved: true`, `posted: false`, `channel: buffer_notify`). Do not run `add_music.py`. Commit and push (the raw link must exist before Buffer fetches it).
 5. Schedule every `buffer_notify` entry without a `buffer_id` as a Buffer reminder (see "How posting works"). Buffer failure → Metricool notification (`channel: metricool_notify`); that failing too → `channel: manual`, note the errors.
 6. Only for `manual` entries (Buffer and Metricool refused them): send the MP4 to the owner with `SendUserFile` plus time, exact caption and a suggested trending slow song, and a `PushNotification`; set `sent_to_owner: true`. Commit and push.
@@ -102,7 +104,7 @@ Test draft for library lookups: Metricool post uuid `7689021596470561225` (a dra
 ## Captions
 
 ```
-<Mood> | Roman Urdu shayari — <one new line that adds to the quote, with searchable words>. (Famous line: "<Mood> | <Author> ki shayari — ...")
+<Mood> | Roman Urdu shayari — <one new line that adds to the quote, with searchable words>.
 <share CTA, e.g. "Jise yaad karte ho, usay yeh reel bhej do 💌" / "Us dost ko bhejo jo yeh samjhega">
 
 Roz aisi lines ke liye follow karein @quotations_and_quotes
