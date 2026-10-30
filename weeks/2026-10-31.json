@@ -1,0 +1,20 @@
+[
+ {
+  "id": "2026-10-31_am",
+  "scene": "sunrise",
+  "label": "UMEED",
+  "line1": "Yeh thakan, yeh intezaar, sab guzar jayega,",
+  "line2": "ek din tum muskura kar yeh din yaad karoge.",
+  "mood": "hope",
+  "topic": "umeed (acha waqt aayega)"
+ },
+ {
+  "id": "2026-10-31_pm",
+  "scene": "rain",
+  "label": "TANHAI",
+  "line1": "Raat ko akele chai peete ho na?",
+  "line2": "Kabhi mujhe bhi bula lena, tum akele nahi ho.",
+  "mood": "sad",
+  "topic": "tanhai / deep (ending with hope)"
+ }
+]
