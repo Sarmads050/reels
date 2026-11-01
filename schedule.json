@@ -1,94 +1,5 @@
 [
  {
-  "slot": "2026-10-16T10:00:00+05:00",
-  "file": "media/w1_d3_am.mp4",
-  "caption": "Juma Mubarak. Der ka matlab inkaar nahi hota. Ameen likh kar aage share karo.\n\nFollow @quotations_and_quotes for daily deep lines\n\n#sabr #islamicquotes #jummamubarak #urduquotes #faith",
-  "approved": true,
-  "mood": "sabr",
-  "sound": "5_slowed_reverb_sad.mp3",
-  "posted": true,
-  "permalink": "https://www.instagram.com/reel/DeivB_ogZMC/",
-  "channel": "metricool",
-  "metricool_id": "396604152",
-  "metricool_uuid": "-2247062811847081766",
-  "ig_song": {
-   "title": "Lab Pe Aati Hai Dua",
-   "artist": "Allama Iqbal (nazm)",
-   "audioId": "927304165621597",
-   "source_reel": "https://www.instagram.com/reel/DeW5ai7Tsxf/"
-  },
-  "error": "Owner report 17 Oct: no song audible. The Instagram song was an 'original_sound' clip (not licensed library music) and our own track was muted (videoVolume 0), so the reel went out without music."
- },
- {
-  "slot": "2026-10-16T18:00:00+05:00",
-  "file": "media/w1_d3_pm.mp4",
-  "caption": "Juma ki shaam, ek dua sab ke liye. Ameen likho aur share karo.\n\nFollow @quotations_and_quotes for daily deep lines\n\n#dua #islamicquotes #jummamubarak #urduquotes #sabr",
-  "approved": true,
-  "mood": "dua (spiritual)",
-  "sound": "1_lofi_udaas_piano.mp3",
-  "posted": true,
-  "permalink": "https://www.instagram.com/reel/DejldMHjg7D/",
-  "channel": "vidiq"
- },
- {
-  "slot": "2026-10-17T10:00:00+05:00",
-  "file": "media/w1_d4_am.mp4",
-  "caption": "Khamoshi bhi ek jawab hoti hai. Agree ho to Save karo.\n\nFollow @quotations_and_quotes for daily deep lines\n\n#deeplines #silence #urduquotes #reality #quotesdaily",
-  "approved": true,
-  "mood": "deep",
-  "sound": "3_bansuri_cinematic.mp3",
-  "posted": true,
-  "permalink": "https://www.instagram.com/reel/DelTUFiDRDe/",
-  "channel": "vidiq"
- },
- {
-  "slot": "2026-10-17T18:00:00+05:00",
-  "file": "media/w1_d4_pm.mp4",
-  "caption": "Waqt sab se bara ustaad hai. Agree ho to Save karo.\n\nFollow @quotations_and_quotes for daily deep lines\n\n#realitylines #urduquotes #lifelessons #deeplines #truth",
-  "approved": true,
-  "mood": "reality",
-  "sound": "5_slowed_reverb_sad.mp3",
-  "posted": false,
-  "permalink": null,
-  "channel": "metricool_notify",
-  "error": "missed: the 17 Oct 17:50 posting run stopped at start (usage limit reached); more than 6 hours late. Media kept.",
-  "metricool_id": "398804676",
-  "metricool_uuid": "-5937618160395006942",
-  "note": "Notification re-sent 18 Oct 03:42 PKT (owner fixing phone settings; earlier tries 02:47-03:31 not received)"
- },
- {
-  "slot": "2026-10-18T10:00:00+05:00",
-  "file": "media/w1_d5_am.mp4",
-  "caption": "Har shakhs qismat nahi hota, kuch sirf sabaq hote hain. Us ko tag karo jise yeh parhna chahiye.\n\nFollow @quotations_and_quotes for daily deep lines\n\n#mohabbat #sadlines #urdupoetry #lovequotes #deepquotes",
-  "approved": true,
-  "mood": "mohabbat",
-  "sound": null,
-  "posted": false,
-  "permalink": null,
-  "channel": "metricool_notify",
-  "metricool_id": "398776426",
-  "metricool_uuid": "1828836510315991030",
-  "sent_to_owner": true,
-  "style": "916_light_lora",
-  "scene": "sunset"
- },
- {
-  "slot": "2026-10-18T18:00:00+05:00",
-  "file": "media/w1_d5_pm.mp4",
-  "caption": "Yaadein | Roman Urdu shayari — waqt dard kam kar deta hai, yaadein nahi.\nJise yaad karte ho, usay yeh reel bhej do 💌\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #sadshayari #romanurdu #yaadein #urduquotes",
-  "approved": true,
-  "mood": "yaadein (sad/romantic)",
-  "sound": null,
-  "posted": false,
-  "permalink": null,
-  "channel": "metricool_notify",
-  "metricool_id": "398974606",
-  "metricool_uuid": "-8509905215426049276",
-  "sent_to_owner": true,
-  "style": "916_light_lora",
-  "scene": "mist"
- },
- {
   "slot": "2026-10-19T10:00:00+05:00",
   "file": "media/w1_d6_am.mp4",
   "caption": "Himmat | Roman Urdu motivation — girna haar nahi, ruk jana haar hai.\nUs dost ko bhejo jo aaj toota hua mehsoos kar raha hai 💪\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #motivationalquotes #romanurdu #himmat #urduquotes",
@@ -614,5 +525,29 @@
   "posted": false,
   "channel": "buffer_notify",
   "buffer_id": "6ae6de6e37c1acd2a0ee561b"
+ },
+ {
+  "slot": "2026-11-02T10:00:00+05:00",
+  "file": "media/2026-11-02_am.mp4",
+  "mood": "hope",
+  "scene": "sunrise",
+  "topic": "umeed (mushkil guzar jayegi)",
+  "caption": "Umeed | Roman Urdu shayari — mushkil waqt kitna bhi lamba ho, acha waqt zaroor aata hai.\nUs dost ko bhejo jo aaj kal thak gaya hai 🌅\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #umeed #romanurdu #hopequotes #urduquotes",
+  "approved": true,
+  "posted": false,
+  "channel": "buffer_notify",
+  "buffer_id": null
+ },
+ {
+  "slot": "2026-11-02T18:00:00+05:00",
+  "file": "media/2026-11-02_pm.mp4",
+  "mood": "romantic",
+  "scene": "city",
+  "topic": "mohabbat",
+  "caption": "Mohabbat | Roman Urdu shayari — sahi saathi ho to har safar aasan aur har raasta chhota lagta hai.\nJis ke saath har safar acha lagta hai, usay yeh reel bhej do 💌\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #mohabbat #romanurdu #lovequotes #urduquotes",
+  "approved": true,
+  "posted": false,
+  "channel": "buffer_notify",
+  "buffer_id": null
  }
 ]

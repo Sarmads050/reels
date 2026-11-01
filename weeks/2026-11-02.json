@@ -1,0 +1,20 @@
+[
+ {
+  "id": "2026-11-02_am",
+  "scene": "sunrise",
+  "label": "UMEED",
+  "line1": "Andhera kitna bhi lamba ho,",
+  "line2": "subah ko aane se koi nahi rok sakta.",
+  "mood": "hope",
+  "topic": "umeed (mushkil guzar jayegi)"
+ },
+ {
+  "id": "2026-11-02_pm",
+  "scene": "city",
+  "label": "MOHABBAT",
+  "line1": "Tum saath ho na,",
+  "line2": "to lambe safar bhi chhote lagte hain.",
+  "mood": "romantic",
+  "topic": "mohabbat"
+ }
+]
