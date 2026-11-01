@@ -1,0 +1,20 @@
+[
+ {
+  "id": "2026-11-01_am",
+  "scene": "road",
+  "label": "HOSLA",
+  "line1": "Gir gaye ho to kya hua,",
+  "line2": "chalna bhi to girne ke baad hi seekha tha.",
+  "mood": "hope",
+  "topic": "hosla / himmat"
+ },
+ {
+  "id": "2026-11-01_pm",
+  "scene": "sunset",
+  "label": "NAIKI",
+  "line1": "Aaj kisi ka din acha kar do,",
+  "line2": "ek choti si muskurahat bhi kisi ki dua ban jati hai.",
+  "mood": "hope",
+  "topic": "sab ke saath acha karo (kindness, naiki)"
+ }
+]

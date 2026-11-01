@@ -589,5 +589,29 @@
   "metricool_uuid": null,
   "posted": false,
   "permalink": null
+ },
+ {
+  "slot": "2026-11-01T10:00:00+05:00",
+  "file": "media/2026-11-01_am.mp4",
+  "mood": "hope",
+  "scene": "road",
+  "topic": "hosla / himmat",
+  "caption": "Hosla | Roman Urdu shayari — har girna ek naya sabaq hai; uth kar phir chalna hi asal himmat hai.\nUs dost ko bhejo jo aaj kal gir kar uthne ki koshish kar raha hai 💪\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #himmat #romanurdu #hosla #urduquotes",
+  "approved": true,
+  "posted": false,
+  "channel": "manual",
+  "sent_to_owner": true,
+  "note": "daily run 31 Oct failed (usage limit); made 1 Nov 11:40 after the 10:00 slot, sent in chat"
+ },
+ {
+  "slot": "2026-11-01T18:00:00+05:00",
+  "file": "media/2026-11-01_pm.mp4",
+  "mood": "hope",
+  "scene": "sunset",
+  "topic": "sab ke saath acha karo (kindness, naiki)",
+  "caption": "Naiki | Roman Urdu shayari — kisi ke liye choti si naiki, ek muskurahat, kisi ka poora din bana deti hai.\nUs insaan ko bhejo jo sab ke chehre par muskurahat le aata hai 😊\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #naiki #romanurdu #kindness #urduquotes",
+  "approved": true,
+  "posted": false,
+  "channel": "buffer_notify"
  }
 ]
