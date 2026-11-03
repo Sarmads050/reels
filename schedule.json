@@ -1,35 +1,5 @@
 [
  {
-  "slot": "2026-10-20T10:00:00+05:00",
-  "file": "media/w1_d7_am.mp4",
-  "caption": "Zindagi | Roman Urdu reality lines — apni qadar khud karna bhi zaroori hai.\nUs shakhs ko bhejo jo sab ke liye haazir rehta hai 🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #sadshayari #romanurdu #zindagi #urduquotes",
-  "approved": true,
-  "mood": "zindagi",
-  "sound": null,
-  "posted": false,
-  "permalink": null,
-  "channel": "metricool_notify",
-  "style": "916_light_lora",
-  "scene": "city",
-  "metricool_id": "400044353",
-  "metricool_uuid": "4161693720016798886"
- },
- {
-  "slot": "2026-10-20T18:00:00+05:00",
-  "file": "media/w1_d7_pm.mp4",
-  "caption": "Umeed | Roman Urdu shayari — mushkil waqt guzar jata hai, bas sabr rakho.\nUs dost ko bhejo jise aaj umeed chahiye 🌅\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #romanurdu #umeed #hope #urduquotes",
-  "approved": true,
-  "mood": "umeed (hope)",
-  "sound": null,
-  "posted": false,
-  "permalink": null,
-  "channel": "metricool_notify",
-  "style": "916_light_lora",
-  "scene": "rain",
-  "metricool_id": "400044424",
-  "metricool_uuid": "6552362195376556825"
- },
- {
   "approved": true,
   "sound": null,
   "posted": false,
@@ -543,5 +513,16 @@
   "posted": false,
   "channel": "buffer_notify",
   "buffer_id": "6ae9cb8947205d2c39978b29"
+ },
+ {
+  "slot": "2026-11-04T10:00:00+05:00",
+  "file": "media/2026-11-04_am.mp4",
+  "mood": "spiritual",
+  "scene": "rain",
+  "topic": "sabr (achha waqt aayega)",
+  "caption": "Sabr | Roman Urdu shayari — mushkil waqt ke baad hi acha waqt aata hai, thoda sabr rakho, sab theek ho jayega.\nUs dost ko bhejo jo aaj kal intezaar mein thak gaya hai 🌧️\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #sabrshayari #romanurdu #sabr #urduquotes",
+  "approved": true,
+  "posted": false,
+  "channel": "buffer_notify"
  }
 ]
