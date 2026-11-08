@@ -450,10 +450,10 @@
   "approved": true,
   "posted": false,
   "channel": "metricool_notify",
-  "metricool_id": null,
-  "metricool_uuid": null,
+  "metricool_id": 420848972,
+  "metricool_uuid": "6724544708064463950",
   "ig_song": null,
   "sent_to_owner": false,
-  "style": null
+  "style": "916_light_lora"
  }
 ]
