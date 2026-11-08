@@ -467,5 +467,16 @@
   "ig_song": "Sukoon (feat. Harshitha Krishnan) — Dhruv Goel (suggested)",
   "sent_to_owner": true,
   "note": "Buffer says notified 10:00:05 but owner got no phone reminder; MP4 sent in chat 8 Nov 10:3x"
+ },
+ {
+  "slot": "2026-11-08T18:00:00+05:00",
+  "file": "media/2026-11-08_pm.mp4",
+  "mood": "hope",
+  "scene": "sunrise",
+  "topic": "sab ke saath acha karo (kindness, naiki)",
+  "caption": "Naiki | Roman Urdu shayari — bura karne walon ke saath bhi acha karna mushkil hai, magar yahi naiki tumhein sab se alag banati hai.\nUs dost ko bhejo jis ka dil bohat saaf hai 🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #romanurdu #naiki #urduquotes #kindness",
+  "approved": true,
+  "posted": false,
+  "channel": "metricool_notify"
  }
 ]
