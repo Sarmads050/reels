@@ -472,5 +472,22 @@
   "ig_song": null,
   "sent_to_owner": false,
   "style": "916_light_lora"
+ },
+ {
+  "slot": "2026-11-10T10:00:00+05:00",
+  "file": "media/2026-11-10_am.mp4",
+  "mood": "hope",
+  "scene": "sunrise",
+  "topic": "hosla / khud par yaqeen",
+  "caption": "Hosla | Roman Urdu shayari — khud par yaqeen rakho, chhoti si roshni bhi andhere se jeet jati hai.\nUs dost ko bhejo jo aaj kal khud ko kamzor samajh raha hai 🪔\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #romanurdu #hosla #urduquotes #motivation",
+  "approved": true,
+  "posted": false,
+  "channel": "metricool_notify",
+  "metricool_id": null,
+  "metricool_uuid": null,
+  "buffer_id": null,
+  "ig_song": null,
+  "sent_to_owner": false,
+  "style": "916_light_lora"
  }
 ]
