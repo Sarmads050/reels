@@ -455,5 +455,22 @@
   "ig_song": null,
   "sent_to_owner": false,
   "style": "916_light_lora"
+ },
+ {
+  "slot": "2026-11-09T18:00:00+05:00",
+  "file": "media/2026-11-09_pm.mp4",
+  "mood": "romantic",
+  "scene": "sunset",
+  "topic": "mohabbat",
+  "caption": "Mohabbat | Roman Urdu shayari — jis se mohabbat ho, us ki choti si fikr bhi dil ko sukoon de jati hai.\nJis ka \"kaise ho?\" tumhara din bana deta hai, usay yeh reel bhej do 💌\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #romanurdu #lovequotes #mohabbat #urduquotes",
+  "approved": true,
+  "posted": false,
+  "channel": "metricool_notify",
+  "metricool_id": null,
+  "metricool_uuid": null,
+  "buffer_id": null,
+  "ig_song": null,
+  "sent_to_owner": false,
+  "style": "916_light_lora"
  }
 ]
