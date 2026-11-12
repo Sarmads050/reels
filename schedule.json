@@ -437,5 +437,24 @@
     "sent_to_owner": false,
     "ig_song": null,
     "permalink": null
+  },
+  {
+    "id": "2026-11-12_pm",
+    "slot": "2026-11-12T18:00:00+05:00",
+    "file": "media/2026-11-12_pm.mp4",
+    "mood": "hope",
+    "topic": "dosti",
+    "scene": "road",
+    "sound": null,
+    "caption": "Dosti | Roman Urdu shayari — sacha dost woh hai jis se baat karke dil halka ho jaye, dosti ki yeh lines us yaar ke naam.\nUs dost ko bhejo jis se baat karke sab theek lagta hai 🤝\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #romanurdu #dostishayari #friendshipquotes #urduquotes",
+    "approved": true,
+    "posted": false,
+    "channel": "metricool_notify",
+    "buffer_id": null,
+    "metricool_id": null,
+    "metricool_uuid": null,
+    "sent_to_owner": false,
+    "ig_song": null,
+    "permalink": null
   }
 ]
