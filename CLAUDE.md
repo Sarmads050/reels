@@ -68,6 +68,16 @@ Owner, 30 Oct 2026: "Allama Iqbal ki banana ban karo, apni taraf se quotes banow
 - No `author` on the reel (our lines carry only the `@quotations_and_quotes` watermark). Caption first line: "<Mood> | Roman Urdu shayari — ...".
 - `famous_used.json` stays as history only; nothing new is added to it.
 
+### Emotional connect first (owner, 14 Nov 2026)
+
+Owner, 14 Nov 2026, about the 14 Nov 18:00 reel ("Phone mein koi message nahi aaya na? / Phir bhi kisi ki dua mein tumhara naam zaroor hai."): "yeh quote acha nahi, log isay connect nahi kar payenge… aesay quote banow jisay log emotionally connect kar payein." Reels are for common people.
+
+- The line must make the reader think **"yeh to meri baat hai"** in the first second. Write about a hidden feeling many people carry but rarely say: smiling in front of everyone and crying alone, being the strong one at home, hiding tiredness from parents, nobody asking "tum theek ho?", overthinking at night, giving everything and not being valued, parents' quiet sacrifices, missing home, waiting for someone.
+- **Line 1 names that real moment/feeling** (specific, true-to-life, not a random detail). **Line 2 gives the emotional turn**: recognition ("main samajhta hoon"), comfort or hope, said like a close friend. It must hit the heart, not just be "nice" or clever.
+- Avoid: trivial or odd details (phone messages, notifications), vague/abstract comfort ("kisi ki dua mein naam", "kahani baaki hai", "mausam badal jata hai") and generic nature metaphors (suraj, beej, diya, mausam) unless the feeling itself is clear and personal.
+- Self-test before rendering: would a normal person screenshot this and send it to someone saying "bilkul sach"? If not, rewrite.
+- Examples of the target style: "Raat ko ro kar bhi, / subah phir uth jaate ho na? Yahi asli himmat hai." · "Ghar walon ke saamne theek rehte ho, / sirf tumhara takiya jaanta hai tum kitne thake ho."
+
 ## Mood groups
 
 - `sad`: reality, deep, zindagi, tanhai, dil ki baat, yaadein, sad lines
