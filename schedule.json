@@ -1,29 +1,5 @@
 [
  {
-  "slot": "2026-11-03T10:00:00+05:00",
-  "file": "media/2026-11-03_am.mp4",
-  "mood": "hope",
-  "scene": "mist",
-  "topic": "hosla / khud par yaqeen",
-  "caption": "Hosla | Roman Urdu shayari — jo kal ki mushkil se nikal aaya, woh aaj ki mushkil se bhi nikal aayega.\nUs dost ko bhejo jo aaj khud par shak kar raha hai 💪\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #hosla #romanurdu #motivationalquotes #urduquotes",
-  "approved": true,
-  "posted": false,
-  "channel": "buffer_notify",
-  "buffer_id": "6ae8b35831e164b233f01dd7"
- },
- {
-  "slot": "2026-11-03T18:00:00+05:00",
-  "file": "media/2026-11-03_pm.mp4",
-  "mood": "sad",
-  "scene": "sunset",
-  "topic": "reality / self-respect (positive turn)",
-  "caption": "Qadar | Roman Urdu shayari — tumhari keemat kisi aur ki nazar se tay nahi hoti, apni izzat khud karna seekho.\nUs dost ko bhejo jo kisi ke liye khud ko kam samajh raha hai 🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #sadshayari #romanurdu #selfrespect #urduquotes",
-  "approved": true,
-  "posted": false,
-  "channel": "buffer_notify",
-  "buffer_id": "6ae9cb8947205d2c39978b29"
- },
- {
   "slot": "2026-11-04T10:00:00+05:00",
   "file": "media/2026-11-04_am.mp4",
   "mood": "spiritual",
@@ -478,6 +454,25 @@
   "buffer_id": null,
   "metricool_id": 431345123,
   "metricool_uuid": "-7729453205183184042",
+  "sent_to_owner": false,
+  "ig_song": null,
+  "permalink": null
+ },
+ {
+  "id": "2026-11-18_am",
+  "slot": "2026-11-18T10:00:00+05:00",
+  "file": "media/2026-11-18_am.mp4",
+  "mood": "spiritual",
+  "topic": "sabr (achha waqt aayega)",
+  "scene": "sunset",
+  "sound": null,
+  "caption": "Sabr | Roman Urdu shayari — doosron se apna muqabla mat karo, har kisi ka waqt alag hota hai, sabr rakho, acha waqt zaroor aayega.\nUs dost ko bhejo jo sochta hai woh peeche reh gaya hai 🌱\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #sabrshayari #romanurdu #sabr #urduquotes",
+  "approved": true,
+  "posted": false,
+  "channel": "metricool_notify",
+  "buffer_id": null,
+  "metricool_id": null,
+  "metricool_uuid": null,
   "sent_to_owner": false,
   "ig_song": null,
   "permalink": null
