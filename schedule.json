@@ -476,5 +476,24 @@
   "sent_to_owner": false,
   "ig_song": null,
   "permalink": null
+ },
+ {
+  "id": "2026-11-18_pm",
+  "slot": "2026-11-18T18:00:00+05:00",
+  "file": "media/2026-11-18_pm.mp4",
+  "mood": "hope",
+  "topic": "sab ke saath acha karo",
+  "scene": "city",
+  "sound": null,
+  "caption": "Naiki | Roman Urdu shayari — jo log apna dard chhupa kar doosron ke chehre par muskurahat laate hain, unka dil sab se khoobsurat hota hai.\nUs insaan ko bhejo jo sab ko hansata hai par khud chupke se rota hai 🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #romanurdu #achaiinsaan #kindness #urduquotes",
+  "approved": true,
+  "posted": false,
+  "channel": "metricool_notify",
+  "buffer_id": null,
+  "metricool_id": null,
+  "metricool_uuid": null,
+  "sent_to_owner": false,
+  "ig_song": null,
+  "permalink": null
  }
 ]

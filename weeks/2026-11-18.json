@@ -1,1 +1,20 @@
-[{"id": "2026-11-18_am", "scene": "sunset", "label": "SABR", "line1": "Sab aage barh gaye, aur tum wahin ho?", "line2": "Dil chhota mat karo, tumhari baari bhi zaroor aayegi.", "mood": "spiritual", "topic": "sabr (achha waqt aayega)"}]
+[
+ {
+  "id": "2026-11-18_am",
+  "scene": "sunset",
+  "label": "SABR",
+  "line1": "Sab aage barh gaye, aur tum wahin ho?",
+  "line2": "Dil chhota mat karo, tumhari baari bhi zaroor aayegi.",
+  "mood": "spiritual",
+  "topic": "sabr (achha waqt aayega)"
+ },
+ {
+  "id": "2026-11-18_pm",
+  "scene": "city",
+  "label": "NAIKI",
+  "line1": "Khud ro kar bhi doosron ko hansate ho na?",
+  "line2": "Aisa dil bohat kam logon ke paas hota hai.",
+  "mood": "hope",
+  "topic": "sab ke saath acha karo"
+ }
+]
