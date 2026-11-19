@@ -1,1 +1,20 @@
-[{"id":"2026-11-19_am","scene":"sunrise","label":"UMEED","line1":"Mehnat karte ho, phir bhi kuch badalta nahi?","line2":"Ruk mat jana, tumhari mehnat zaya nahi jayegi.","mood":"hope","topic":"umeed / na-umeed mat ho"}]
+[
+ {
+  "id": "2026-11-19_am",
+  "scene": "sunrise",
+  "label": "UMEED",
+  "line1": "Mehnat karte ho, phir bhi kuch badalta nahi?",
+  "line2": "Ruk mat jana, tumhari mehnat zaya nahi jayegi.",
+  "mood": "hope",
+  "topic": "umeed / na-umeed mat ho"
+ },
+ {
+  "id": "2026-11-19_pm",
+  "scene": "sunset",
+  "label": "ABBU",
+  "line1": "Abbu kabhi nahi kehte, \"main thak gaya hoon.\"",
+  "line2": "Aaj unke paas baith jao, unki aadhi thakan utar jayegi.",
+  "mood": "sad",
+  "topic": "maa / family"
+ }
+]
