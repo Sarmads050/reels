@@ -504,5 +504,24 @@
   "metricool_uuid": "2990759935010881889",
   "posted": false,
   "permalink": null
+ },
+ {
+  "id": "2026-11-20_pm",
+  "slot": "2026-11-20T18:00:00+05:00",
+  "file": "media/2026-11-20_pm.mp4",
+  "mood": "hope",
+  "topic": "hosla / himmat",
+  "scene": "road",
+  "sound": null,
+  "caption": "Hosla | Roman Urdu shayari — jo ghar ka bojh chup chap uthata hai aur kabhi shikayat nahi karta, woh sab se bahadur hai.\nUs dost ko bhejo jo sab ke liye mazboot bana rehta hai 🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #romanurdu #hoslashayari #motivationalquotes #urduquotes",
+  "approved": true,
+  "channel": "metricool_notify",
+  "buffer_id": null,
+  "sent_to_owner": false,
+  "ig_song": null,
+  "metricool_id": null,
+  "metricool_uuid": null,
+  "posted": false,
+  "permalink": null
  }
 ]

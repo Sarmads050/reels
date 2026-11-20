@@ -7,5 +7,14 @@
   "line2": "unhein isi Juma woh khabar suna de. Ameen.",
   "mood": "spiritual",
   "topic": "Juma dua"
+ },
+ {
+  "id": "2026-11-20_pm",
+  "scene": "road",
+  "label": "HOSLA",
+  "line1": "Ghar ki zimmedari chup chap utha rahe ho na?",
+  "line2": "Kisi ne kaha nahi, par tum bohat bahadur ho.",
+  "mood": "hope",
+  "topic": "hosla / himmat"
  }
 ]
