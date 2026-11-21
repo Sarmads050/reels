@@ -3,23 +3,25 @@
 This repo holds the reels for the Instagram account **@quotations_and_quotes** (owner: Sarmad, Pakistan, timezone **Asia/Karachi**). Talk to the owner in **Roman Urdu**, short and simple.
 
 - `media/` — reels waiting to be posted (MP4, **1080x1920 (9:16), 12 s, silent** since 18 Oct 2026; older ones 1080x1350 with music). Deleted after they are posted.
-- `schedule.json` — one entry per post: `slot` (Karachi time), `file`, `mood`, `sound`, `caption`, `approved`, `channel` (`buffer_notify`, fallback `metricool_notify` or `manual`; old entries `vidiq`/`metricool`/`buffer`), `buffer_id`, `sent_to_owner`, `ig_song`, `metricool_id`, `metricool_uuid`, `posted`, `permalink`.
+- `schedule.json` — one entry per post: `slot` (Karachi time), `file`, `mood`, `sound`, `caption`, `approved`, `channel` (`gmail`, fallback `manual`; old entries `buffer_notify`/`metricool_notify`/`vidiq`/`metricool`/`buffer`), `gmail_id`, `buffer_id`, `sent_to_owner`, `ig_song`, `metricool_id`, `metricool_uuid`, `posted`, `permalink`.
 - `songs_pool.json` — slow, relaxing Instagram-library songs per mood group, refreshed weekly (see "Song research").
 - `sounds/` — our own original background tracks; `sounds/playlist.txt` lists the ones in use (1 lofi udaas piano, 3 bansuri cinematic, 4 romantic guitar, 5 slowed reverb sad). Made with `tools/sounds.py`.
 - `weeks/` — the quote lists the reels were made from (daily files `<date>.json` since 18 Oct 2026).
 - `tools/` — `make_reels.sh <posts.json> <out_dir> [seed]` renders silent reels in the house style (`reel916.py`; scenes come from `premium.py`). `add_music.py` (old, for the 15 s music reels) is **not used any more**: do not run it.
 
-## How posting works (owner's decision, 27 Oct 2026: "buffer se mujhy notifications bhej dia karein")
+## How posting works (owner's decision, 21 Nov 2026: reels by Gmail)
 
-Two reels a day, **10:00 and 18:00 Karachi**: the 10:00 reel is made the night before (~20:55), the 18:00 reel the same day at ~17:00 (see "Daily runs"). **We never publish to Instagram ourselves.** The owner adds a song in the Instagram app and posts each reel himself.
+Two reels a day, **10:00 and 18:00 Karachi**. Each reel is made shortly before its slot (~09:47 and ~17:47, see "Daily runs") and **emailed to the owner's Gmail**. **We never publish to Instagram ourselves.** He downloads the video, adds a song in the Instagram app and posts it.
 
-- **No auto posting** (owner, 27 Oct 2026): a Buffer auto-post test on 27 Oct showed Instagram does not let him add a song after a reel is posted. Never Buffer `schedulingType: automatic`, never Metricool `autoPublish: true`, never vidIQ publishing. (Instagram API cannot create Instagram drafts either.)
-- **Since 8 Nov 2026, Metricool reminder first** (owner's choice, 8 Nov 2026): Buffer showed `notificationStatus: notified` for the 7 Nov 10:00, 7 Nov 18:00 and 8 Nov 10:00 reels, but none of those reminders reached his phone. So schedule each reel as a **Metricool notification** first (`channel: metricool_notify`, see "Scheduling in Metricool"). If Metricool refuses (for example, the 20 a month are used up), use the Buffer reminder below. Never schedule the same reel in both. Wherever "Daily runs" says "Buffer", read it as "Metricool first, Buffer as fallback".
-- **Buffer reminder** (`channel: buffer_notify`, now the fallback): Buffer org `6ae0788be586811d71fdec73`, Instagram channel `6ae07a3a2f1f5ed648e8755e`. Each reel: `create_post` with **`schedulingType: notification`**, `mode: customScheduled`, `dueAt` = slot with +05:00, `text` = exact caption, `assets` [{video: {url: raw GitHub link}}], `metadata.instagram` {`type: reel`, `shouldShareToFeed: true`}. Save the id as `buffer_id`. At the slot the Buffer phone app notifies him; tapping it saves the video and copies the caption; he adds a song in Instagram and posts. Free plan: max 10 scheduled posts at a time (no monthly cap); we only ever have one pending.
-- Fallback if Buffer refuses: Metricool notification (`autoPublish: false`, see "Scheduling in Metricool", `channel: metricool_notify`; 20 a month, renews on the 1st). Never schedule the same reel in both.
-- If both refuse: `channel: manual`, send the MP4 + exact caption with `SendUserFile` and a `PushNotification` "yeh reel manually Instagram par upload kar dein".
-- Do **not** send reels to the owner in advance when Buffer/Metricool accepted them (owner, 18 Oct: "kal ki video kal bhejna").
+- **Why Gmail** (owner, 21 Nov 2026): the Metricool free plan ran out (every reminder from 18 Nov 18:00 on shows "You have reached your Metricool account limit", so nothing reached his phone) and Buffer reminders did not reach his phone on 7–8 Nov. WhatsApp has no free connector; Telegram is blocked from this sandbox. He chose Gmail.
+- **Email** (`channel: gmail`): Gmail `send_message` to the owner's own address (the session's user email). Subject exactly `[Reel] <D Mon> subah 10 baje - <Label>` or `[Reel] <D Mon> shaam 6 baje - <Label>`. Plain-text body: (1) the raw GitHub download link, (2) "Instagram par upload karein, slow song lagayein (mashwara: <song>)", (3) the exact caption, (4) "(Yeh email 5 din baad khud delete ho jayegi.)". **Never attach the MP4** (link only, so the mailbox never fills up). Save the message id as `gmail_id`, set `sent_to_owner: true`.
+- **Cleanup every run**: `search_threads` with `subject:"[Reel]" older_than:5d` (from/to his own address) and `trash_thread` each result. Only threads with the `[Reel]` subject; never touch any other email.
+- **No auto posting** (owner, 27 Oct 2026): Instagram does not let him add a song after a reel is posted. Never Buffer `schedulingType: automatic`, never Metricool `autoPublish: true`, never vidIQ publishing.
+- Do not use Metricool or Buffer reminders any more (old entries keep their `metricool_*`/`buffer_id` fields as history).
+- If Gmail fails: `channel: manual`, send the MP4 + exact caption with `SendUserFile` and a `PushNotification` "yeh reel manually Instagram par upload kar dein".
+- Send each reel only at its own time (owner, 18 Oct: "kal ki video kal bhejna"): never email tomorrow's reel today.
 - Reels are **silent** (owner, 18 Oct); he adds an Instagram song himself when posting.
+- Note: Telegram works for the nf-updates repo through its GitHub Actions workflow `tg-notify.yml`; if the owner ever wants reels on Telegram, the same approach could be set up here.
 
 Video URLs (all channels) are GitHub raw links: `https://raw.githubusercontent.com/Sarmads050/reels/main/<file>`.
 Metricool brand id `7403821`. vidIQ account `quotations_and_quotes`.
@@ -98,28 +100,26 @@ Owner's rules (15 Oct 2026): songs must be **slow and relaxing** (no fast music)
 
 Test draft for library lookups: Metricool post uuid `7689021596470561225` (a draft, date 2026-10-30, never published). Get its current id with `getScheduledPosts`; update it with `draft: true`, `autoPublish: false`, keeping it a draft. A successful update attaches that audio to the draft (harmless) and changes its id.
 
-## Daily runs (owner, 2 Nov 2026: "subha 10 bj wali reel raat ko bana do or sham 6 bj wali reel sham ko 5 bj banow")
+## Daily runs (owner, 21 Nov 2026: Gmail delivery; each reel made just before its slot)
 
-Each reel is made shortly before it is needed, and **only one Buffer reminder is pending at a time** (2 Nov 2026: with two reminders pending, the Buffer phone app gave him the 18:00 video at 10:00).
+### Morning run (~09:47 Karachi): today's 10:00 reel
 
-### Night run (~20:55 Karachi): tomorrow's 10:00 reel only
-
-1. `git pull`. Drop entries from `schedule.json` whose slot is more than 14 days old (and `git rm` their media files).
+1. `git pull`. Drop entries from `schedule.json` whose slot is more than 14 days old (and `git rm` their media files). Trash `[Reel]` emails older than 5 days (see "How posting works").
 2. Sundays only: results of the last 7 days with `vidiq_instagram_owner_insights` (and `vidiq_ig_profile_reels`); a short summary for the owner (moods, morning vs evening).
-3. If tomorrow's 10:00 entry already exists, skip to step 5. Otherwise take tomorrow's 10:00 topic from "Topics" (by weekday) and write the quote following "Our own simple lines" (own original, easy, feelable; never Iqbal). Never repeat a line already used (check `weeks/` and `schedule.json`). Fields: `id` (`<date>_am`), `scene` (sunset, mist, sunrise, road, city, rain; never the same as the previous reel), `label` (one or two words, CAPS), `line1`, `line2`, `mood`, `topic` (no `author`). Save as `weeks/<date>.json` (a list; the evening run appends the `_pm` item later).
-4. Render with `tools/make_reels.sh <json with just this item> <tmp> <new seed>` (pip install numpy/pillow/fonttools/scipy with `--break-system-packages` if missing; ffmpeg needed). Look at the `_preview.png`; fix and re-render anything hard to read. Copy to `media/<date>_am.mp4`; add the entry (`mood`, `scene`, caption per "Captions"; `approved: true`, `posted: false`, `channel: buffer_notify`). Do not run `add_music.py`. Commit and push (the raw link must exist before Buffer fetches it).
-5. Schedule it as a Buffer reminder (see "How posting works"), save `buffer_id`, commit, push. Buffer failure → Metricool notification (`channel: metricool_notify`); that failing too → `channel: manual`: send the MP4 with `SendUserFile` + time + exact caption and a `PushNotification`, `sent_to_owner: true`.
-6. Message the owner in one or two short Roman Urdu lines: tomorrow's 10:00 reel is set (mood, the line, a suggested slow song); the 18:00 one is made tomorrow at 5 pm. Sundays: add the weekly summary.
+3. If today's 10:00 entry already has `gmail_id` (or `sent_to_owner: true`), stop. If it exists without one, skip to step 5. Otherwise take today's 10:00 topic from "Topics" (by weekday) and write the quote following "Our own simple lines". Never repeat a line (check `weeks/` and `schedule.json`). Fields: `id` (`<date>_am`), `scene` (sunset, mist, sunrise, road, city, rain; never the same as the previous reel), `label`, `line1`, `line2`, `mood`, `topic`. Save as `weeks/<date>.json` (a list).
+4. Render with `tools/make_reels.sh <json with just this item> <tmp> <new seed>` (pip install numpy/pillow/fonttools/scipy with `--break-system-packages` if missing). Look at the `_preview.png`; fix anything hard to read. Copy to `media/<date>_am.mp4`; add the entry (caption per "Captions"; `approved: true`, `posted: false`, `channel: gmail`). Commit and push, and check the raw link returns 200.
+5. Email it (see "How posting works"), save `gmail_id`, `sent_to_owner: true`, commit, push.
+6. One short Roman Urdu line: "Subah 10 baje wali reel Gmail par bhej di" + the line and a suggested slow song (Sundays: add the weekly summary).
 
-### Evening run (~16:55 Karachi): today's 18:00 reel
+### Evening run (~17:47 Karachi): today's 18:00 reel
 
-1. `git pull`. If today's 18:00 entry already has a `buffer_id` or `metricool_uuid`, stop (say nothing).
-2. If today's 10:00 entry does not exist (last night's run failed): make it too, and since its slot has passed send it here with `SendUserFile` + exact caption and a `PushNotification` (`channel: manual`, `sent_to_owner: true`).
-3. If today's 18:00 entry does not exist: take today's 18:00 topic from "Topics", write the line following "Our own simple lines" (never repeat; scene different from the 10:00 reel), append it (`id` `<date>_pm`) to `weeks/<date>.json`, render, check the preview, copy to `media/<date>_pm.mp4`, add the entry (`channel: buffer_notify`), commit and push.
-4. Schedule it as a Buffer reminder for today 18:00+05:00, save `buffer_id`, commit, push. Failures as in the night run step 5.
-5. One short Roman Urdu line: "Shaam 6 baje wali reel Buffer mein lag gayi" (+ the line and a suggested slow song).
+1. `git pull`. Trash `[Reel]` emails older than 5 days. If today's 18:00 entry already has `gmail_id` (or `sent_to_owner: true`), stop (say nothing).
+2. If today's 10:00 reel was never sent (morning run failed): make/send it too, same way.
+3. If today's 18:00 entry does not exist: take today's 18:00 topic from "Topics", write the line (never repeat; scene different from the 10:00 reel), append it (`id` `<date>_pm`) to `weeks/<date>.json`, render, check the preview, copy to `media/<date>_pm.mp4`, add the entry (`channel: gmail`), commit, push, check the raw link.
+4. Email it, save `gmail_id`, commit, push. Gmail failing → `channel: manual` (see above).
+5. One short Roman Urdu line: "Shaam 6 baje wali reel Gmail par bhej di" (+ the line and a suggested slow song).
 
-## Scheduling in Metricool (fallback)
+## Scheduling in Metricool (not used since 21 Nov 2026; kept for reference)
 
 `createScheduledPost` (blogId `7403821`, date = slot with +05:00): `autoPublish: false`, `draft: false`, `media` = [raw GitHub link], `text` = exact caption, `providers` [instagram], `publicationDate` {slot, `Asia/Karachi`}, `instagramData` {`type: REEL`, `showReelOnFeed: true`} (no audioConfiguration). Save `metricool_id`, `metricool_uuid`.
 

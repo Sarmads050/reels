@@ -528,13 +528,15 @@
   "sound": null,
   "caption": "Tanhai | Roman Urdu shayari — dil ki baat kehne wala koi na ho to bhi yaad rakho, koi tumhari sunne wala hai, tum akele nahi ho.\nUs dost ko bhejo jo sab ki sunta hai par apni kisi se nahi kehta 🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #sadshayari #romanurdu #tanhaishayari #urduquotes",
   "approved": true,
-  "channel": "metricool_notify",
+  "channel": "gmail",
   "buffer_id": null,
-  "sent_to_owner": false,
+  "sent_to_owner": true,
   "ig_song": null,
   "metricool_id": 436604158,
   "metricool_uuid": "8405444935345062749",
   "posted": false,
-  "permalink": null
+  "permalink": null,
+  "gmail_id": "1a1fe7469c094500",
+  "note": "Metricool reminder failed (account limit); emailed 19:15"
  }
 ]
