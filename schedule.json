@@ -545,12 +545,12 @@
   "approved": true,
   "channel": "gmail",
   "buffer_id": null,
-  "sent_to_owner": false,
+  "sent_to_owner": true,
   "ig_song": "The Simple Life - Dhruv Goel (suggested)",
   "metricool_id": null,
   "metricool_uuid": null,
   "posted": false,
   "permalink": null,
-  "gmail_id": null
+  "gmail_id": "1a2034e0eed5f10b"
  }
 ]
