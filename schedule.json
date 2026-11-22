@@ -538,5 +538,25 @@
   "permalink": null,
   "gmail_id": "1a1fe7469c094500",
   "note": "Metricool reminder failed (account limit); emailed 19:15"
+ },
+ {
+  "id": "2026-11-22_am",
+  "slot": "2026-11-22T10:00:00+05:00",
+  "file": "media/2026-11-22_am.mp4",
+  "mood": "hope",
+  "topic": "hosla / himmat",
+  "scene": "road",
+  "sound": null,
+  "caption": "Hosla | Roman Urdu shayari — jo roz thak kar bhi phir uth jaata hai, woh kamzor nahi, sab se mazboot insaan hai.\nUs dost ko bhejo jo sab kuch seh kar bhi muskurata hai 💪🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #romanurdu #himmat #motivationalquotes #urduquotes",
+  "approved": true,
+  "channel": "gmail",
+  "buffer_id": null,
+  "sent_to_owner": false,
+  "ig_song": null,
+  "metricool_id": null,
+  "metricool_uuid": null,
+  "posted": false,
+  "permalink": null,
+  "gmail_id": null
  }
 ]
