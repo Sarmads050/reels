@@ -551,12 +551,12 @@
   "approved": true,
   "channel": "gmail",
   "buffer_id": null,
-  "sent_to_owner": false,
-  "ig_song": null,
+  "sent_to_owner": true,
+  "ig_song": "Sukoon - Dhruv Goel (suggested)",
   "metricool_id": null,
   "metricool_uuid": null,
   "posted": false,
   "permalink": null,
-  "gmail_id": null
+  "gmail_id": "1a201964fb843a64"
  }
 ]
