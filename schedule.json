@@ -1,34 +1,5 @@
 [
  {
-  "slot": "2026-11-08T10:00:00+05:00",
-  "file": "media/2026-11-08_am.mp4",
-  "mood": "hope",
-  "scene": "rain",
-  "topic": "hosla / himmat",
-  "caption": "Hosla | Roman Urdu shayari — thakan mein thoda aaram kar lena kamzori nahi, himmat wapas aayegi aur safar phir shuru hoga.\nUs dost ko bhejo jo aaj kal bohat thak gaya hai 🌧️\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #romanurdu #hosla #urduquotes #motivation",
-  "approved": true,
-  "posted": false,
-  "channel": "buffer_notify",
-  "buffer_id": "6aef4a65004e4879a7669379",
-  "ig_song": "Sukoon (feat. Harshitha Krishnan) — Dhruv Goel (suggested)",
-  "sent_to_owner": true,
-  "note": "Buffer says notified 10:00:05 but owner got no phone reminder; MP4 sent in chat 8 Nov 10:3x"
- },
- {
-  "slot": "2026-11-08T18:00:00+05:00",
-  "file": "media/2026-11-08_pm.mp4",
-  "mood": "hope",
-  "scene": "sunrise",
-  "topic": "sab ke saath acha karo (kindness, naiki)",
-  "caption": "Naiki | Roman Urdu shayari — bura karne walon ke saath bhi acha karna mushkil hai, magar yahi naiki tumhein sab se alag banati hai.\nUs dost ko bhejo jis ka dil bohat saaf hai 🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #romanurdu #naiki #urduquotes #kindness",
-  "approved": true,
-  "posted": false,
-  "channel": "metricool_notify",
-  "metricool_id": 420491227,
-  "metricool_uuid": "8707172804115712831",
-  "ig_song": "Guitar Peace — Lance Taber (suggested)"
- },
- {
   "slot": "2026-11-09T10:00:00+05:00",
   "file": "media/2026-11-09_am.mp4",
   "mood": "hope",
@@ -552,5 +523,25 @@
   "posted": false,
   "permalink": null,
   "gmail_id": "1a2034e0eed5f10b"
+ },
+ {
+  "id": "2026-11-23_am",
+  "slot": "2026-11-23T10:00:00+05:00",
+  "file": "media/2026-11-23_am.mp4",
+  "mood": "hope",
+  "topic": "umeed (mushkil guzar jayegi)",
+  "scene": "mist",
+  "sound": null,
+  "caption": "Umeed | Roman Urdu shayari — har mushkil waqt guzar jata hai, yeh bura waqt bhi guzar jayega, bas hosla rakho.\nUs dost ko bhejo jo aaj kal bohat mushkil waqt se guzar raha hai 🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #romanurdu #umeed #urduquotes #sadshayari",
+  "approved": true,
+  "channel": "gmail",
+  "buffer_id": null,
+  "sent_to_owner": false,
+  "ig_song": "Guitar Peace - Lance Taber (suggested)",
+  "metricool_id": null,
+  "metricool_uuid": null,
+  "posted": false,
+  "permalink": null,
+  "gmail_id": null
  }
 ]
