@@ -7,5 +7,14 @@
   "line2": "Tumhara waqt bhi aayega. Der se sahi, tum bhi pahunchoge.",
   "mood": "hope",
   "topic": "hosla / khud par yaqeen"
+ },
+ {
+  "id": "2026-11-24_pm",
+  "scene": "city",
+  "label": "IZZAT",
+  "line1": "Sirf zaroorat mein yaad karte hain na log?",
+  "line2": "Acha bane raho, bas apni qeemat pehchaan lo.",
+  "mood": "sad",
+  "topic": "reality / self-respect (positive turn)"
  }
 ]
