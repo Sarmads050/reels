@@ -1,43 +1,5 @@
 [
  {
-  "id": "2026-11-13_am",
-  "slot": "2026-11-13T10:00:00+05:00",
-  "file": "media/2026-11-13_am.mp4",
-  "mood": "spiritual",
-  "topic": "Juma dua",
-  "scene": "sunrise",
-  "sound": null,
-  "caption": "Dua | Roman Urdu shayari — Juma ki dua un sab ke liye jo raat bhar fikr mein jaagte hain, Allah sab ki mushkil aasaan kare.\nUs dost ko bhejo jo aaj kal raaton ko so nahi pata 🤲\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #romanurdu #jumadua #duashayari #urduquotes",
-  "approved": true,
-  "posted": false,
-  "channel": "metricool_notify",
-  "buffer_id": null,
-  "metricool_id": 425874207,
-  "metricool_uuid": "-2747383676200728661",
-  "sent_to_owner": false,
-  "ig_song": null,
-  "permalink": null
- },
- {
-  "id": "2026-11-13_pm",
-  "slot": "2026-11-13T18:00:00+05:00",
-  "file": "media/2026-11-13_pm.mp4",
-  "mood": "hope",
-  "topic": "hosla / himmat",
-  "scene": "sunset",
-  "sound": null,
-  "caption": "Hosla | Roman Urdu shayari — himmat na haaro, roz ka chhota qadam hi ek din bari manzil ban jata hai.\nUs dost ko bhejo jo aaj kal thak gaya hai 💪\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #romanurdu #himmat #motivationalquotes #urduquotes",
-  "approved": true,
-  "posted": false,
-  "channel": "metricool_notify",
-  "buffer_id": null,
-  "metricool_id": 426861304,
-  "metricool_uuid": "3002037243365969343",
-  "sent_to_owner": false,
-  "ig_song": null,
-  "permalink": null
- },
- {
   "id": "2026-11-14_am",
   "slot": "2026-11-14T10:00:00+05:00",
   "file": "media/2026-11-14_am.mp4",
@@ -520,6 +482,19 @@
   "channel": "gmail",
   "gmail_id": "1a21d0d79821c2b6",
   "sent_to_owner": true,
+  "posted": false,
+  "permalink": null
+ },
+ {
+  "slot": "2026-11-28T10:00:00+05:00",
+  "file": "media/2026-11-28_am.mp4",
+  "mood": "hope",
+  "sound": "The Simple Life - Dhruv Goel (suggested)",
+  "caption": "Umeed | Roman Urdu shayari — sab ke saamne theek rehne wale thake dil ke liye, yeh mushkil din bhi guzar jayenge.\nUs dost ko bhejo jo hamesha kehta hai \"main theek hoon\" 🤍\n\nRoz aisi lines ke liye follow karein @quotations_and_quotes\n\n#urdushayari #romanurdu #umeed #hopequotes #urduquotes",
+  "approved": true,
+  "channel": "gmail",
+  "gmail_id": null,
+  "sent_to_owner": false,
   "posted": false,
   "permalink": null
  }
